@@ -8,7 +8,8 @@ angular.module('acidification', [
 		'ngResource',
 		'ui.router',
 		'ngMaterial',
-		'angulartics'
+		'angulartics',
+		'angulartics.google.analytics'
 		])
 
   .config(function ($stateProvider, $urlRouterProvider) {
