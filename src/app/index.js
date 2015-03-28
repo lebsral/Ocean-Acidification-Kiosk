@@ -7,9 +7,7 @@ angular.module('acidification', [
 		'ngSanitize',
 		'ngResource',
 		'ui.router',
-		'ngMaterial',
-		'angulartics',
-		'angulartics.google.analytics'
+		'ngMaterial'
 		])
 
   .config(function ($stateProvider, $urlRouterProvider) {
