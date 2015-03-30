@@ -1,7 +1,5 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="VoicesController">
 
-
-<div class="videogular-container">
+<div ng-controller="VoicesController as controller" class="videogular-container">
 
 	<videogular vg-player-ready="controller.onPlayerReady($API)" vg-complete="controller.onCompleteVideo()" vg-theme="controller.config.theme.url">
        <vg-media vg-src="controller.config.sources"
@@ -28,7 +26,25 @@
             <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
 	</videogular>
 
-</div>
 
-  
-</md-toolbar>
+
+        <ul>
+          
+            <div ng-repeat="vid in controller.videos | filter:query as results" ng-if="$index < 6">
+            
+                
+            <li animate="animate-repeat" ><a ng-click="controller.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
+            </li>
+                
+            </div>
+
+
+            </div>
+
+            <li class="animate-repeat" ng-if="results.length == 0">
+            <strong>No results found...</strong>
+            </li>
+
+        </ul>
+
+</div>
