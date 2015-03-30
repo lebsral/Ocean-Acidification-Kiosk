@@ -2,7 +2,17 @@
 
 angular.module('acidification')
   .controller('VoicesController',
-  	['$sce', '$timeout', function ($sce, $timeout) {
+  	[
+    '$sce',
+    '$timeout',
+ //   'ngSanitize',
+ //   'com.2fdevs.videogular',
+ //   'com.2fdevs.videogular.plugins.controls',
+  //  'com.2fdevs.videogular.plugins.overlayplay',
+  //  'com.2fdevs.videogular.plugins.poster',
+   // 'com.2fdevs.videogular.plugins.buffering',
+
+      function ($sce, $timeout) {
             var controller = this;
             controller.state = null;
             controller.API = null;
