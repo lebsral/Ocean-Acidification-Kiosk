@@ -37,7 +37,7 @@ angular.module('acidification')
             controller.videos = [
             {
                 sources: [
-                    {src: $sce.trustAsResourceUrl('vids/Acidifying the Ocean   Assessing Impacts on Coral Reefs.mp4'),
+                    {src: $sce.trustAsResourceUrl('vids/AcidifyingtheOceanAssessingImpactsonCoralReefs.mp4'),
                     type: 'video/mp4',
                     tags: ['long', 'short'],
                 	name: 'Acidifying the Ocean   Assessing Impacts on Coral Reefs'}
@@ -241,7 +241,7 @@ angular.module('acidification')
             },
             {
                 sources: [
-                    {src: $sce.trustAsResourceUrl('vids/Acid Test  The Global Challenge of Ocean Acidification.mp4'),
+                    {src: $sce.trustAsResourceUrl('vids/AcidTest.mp4'),
                     type: 'video/mp4',
                     tags: ['long'],
                  	name: 'Acid Test  The Global Challenge of Ocean Acidification'}
