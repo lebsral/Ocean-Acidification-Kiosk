@@ -1,8 +1,8 @@
 
-<div ng-controller="VoicesController as controller" class="videogular-container">
-
+<div ng-controller="VoicesController as controller">
+    <div class="videogular-container">
 	<videogular vg-player-ready="controller.onPlayerReady($API)" vg-complete="controller.onCompleteVideo()" vg-theme="controller.config.theme.url">
-       <vg-media vg-src="controller.config.sources"
+            <vg-media vg-src="controller.config.sources"
                       vg-tracks="controller.config.tracks">
             </vg-media>
 
@@ -24,12 +24,22 @@
             <vg-overlay-play></vg-overlay-play>
             <vg-buffering></vg-buffering>
             <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
-	</videogular>
+    </videogular>
+    </div>
+
+    <div class="playlist">
+        
+
+<form class="form-inline">
+      <input ng-model="query" type="text"
+        placeholder="Filter by" autofocus>
+        
+    </form>
 
 
 
-        <ul>
-          
+        <ul  class="example-animate-container">
+            
             <div ng-repeat="vid in controller.videos | filter:query as results" ng-if="$index < 6">
             
                 
@@ -39,12 +49,12 @@
             </div>
 
 
-            </div>
+           
 
             <li class="animate-repeat" ng-if="results.length == 0">
             <strong>No results found...</strong>
             </li>
 
         </ul>
-
+ </div>
 </div>
