@@ -8,6 +8,8 @@ angular.module('acidification', [
 		'ngResource',
 		'ui.router',
 		'ngMaterial',
+		//'angulartics',
+		//'com.2fdevs.videogular.analytics',
 		'com.2fdevs.videogular',
 		'com.2fdevs.videogular.plugins.controls',
 		'com.2fdevs.videogular.plugins.overlayplay',
@@ -23,5 +25,4 @@ angular.module('acidification', [
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+  });
