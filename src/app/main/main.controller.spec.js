@@ -1,6 +1,5 @@
-'use strict';
-
-describe('main.controller', function(){
+describe('main.controller', function () {
+  'use strict';
   var scope;
 
   beforeEach(module('acidification'));

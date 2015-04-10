@@ -1,7 +1,8 @@
-'use strict';
+
 
 angular.module('acidification')
   .controller('MainCtrl', function ($scope) {
+    'use strict';
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
@@ -52,7 +53,7 @@ angular.module('acidification')
         'logo': 'ruby-sass.png'
       }
     ];
-    angular.forEach($scope.awesomeThings, function(awesomeThing) {
+    angular.forEach($scope.awesomeThings, function (awesomeThing) {
       awesomeThing.rank = Math.random();
     });
   });
