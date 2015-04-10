@@ -15,7 +15,7 @@ angular.module('acidification', [
   'com.2fdevs.videogular.plugins.poster'
 ])
 
-  .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider) {
     'use strict';
     $stateProvider
       .state('home', {
@@ -23,6 +23,7 @@ angular.module('acidification', [
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
+
 
     $urlRouterProvider.otherwise('/');
   });
