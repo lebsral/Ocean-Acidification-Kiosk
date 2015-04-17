@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
-
 html {
   font-family: 'Roboto Slab', serif;
 }
@@ -17,7 +16,6 @@ html {
 
 .thumbnail {
   height: 200px;
-
   img.pull-right {
     width: 50px;
   }
@@ -32,9 +30,7 @@ section.jumbotron {
   padding: 1px 30px;
   background-color: #5aadbb;
   text-align: center;
-
   color: white;
-
   h1 {
     font-size: 3em;
   }
@@ -43,15 +39,14 @@ section.jumbotron {
 .techs {
   display: flex;
   flex-flow: row wrap;
-
   md-card {
     width: 30%;
-
     img.pull-right {
       float: right;
       width: 50px;
     }
   }
 }
+
 // injector
 // endinjector

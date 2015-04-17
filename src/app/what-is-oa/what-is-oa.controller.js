@@ -1,7 +1,7 @@
 
 
 angular.module('acidification')
-  .controller('MainCtrl', function ($scope) {
+  .controller('what-is-oa-controller', function ($scope) {
     'use strict';
     $scope.awesomeThings = [
       {
