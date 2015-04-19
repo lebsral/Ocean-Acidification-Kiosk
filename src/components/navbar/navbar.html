@@ -1,14 +1,15 @@
 <md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
 
-  <md-button href="https://google.com">Buttons that link</md-button>
+
 
   <section flex layout="row" layout-align="left center">
-    <md-button href="#" class="md-raised">Buttons that ripple</md-button>
-    <md-button href="#" class="md-raised"></md-button>
-    <md-button href="#" class="md-raised">What is OA?</md-button>
 
-
-      <a ui-sref=".what-is-oa" class="btn btn-primary">OA</a>
+<md-button class="md-raised" ui-sref=".home">Home</md-button>
+    <md-button class="md-raised" ui-sref="what-is-oa">What is OA?</md-button>
+      <md-button class="md-raised" ui-sref=".voices">Voices</md-button>
+      <md-button class="md-raised" ui-sref=".look-closer">Look Closer</md-button>
+      <md-button class="md-raised" ui-sref=".oa-facts">OA Facts</md-button>
+      <md-button class="md-raised" ui-sref=".act-now">Act Now</md-button>
 
 
   </section>
@@ -16,8 +17,6 @@
   <md-button href="#">Current date: {{ date | date:'yyyy-MM-dd' }}</md-button>
 
 </md-toolbar>
-
-
 
 
 <div ui-view></div>

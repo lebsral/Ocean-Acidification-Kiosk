@@ -17,14 +17,9 @@ angular.module('acidification', [
 
     .config(function ($stateProvider, $urlRouterProvider) {
     'use strict';
-//    $stateProvider
-//      .state('home', {
-//        url: '/',
-//        templateUrl: 'app/what-is-oa/partial-what-is-oa.html',
-//        controller: 'what-is-oa.controller'
-//      })
 
-        $stateProvider
+
+    $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
@@ -32,10 +27,10 @@ angular.module('acidification', [
       })
       .state('home.what-is-oa', {
         url: '/what-is-oa',
-        templateUrl: 'app/what-is-oa/partial-what-is-oa.html',
+        templateUrl: 'app/components/what-is-oa/partial-what-is-oa.html',
         controller: 'what-is-oa.controller'
       });
 
 
-   // $urlRouterProvider.otherwise('/');
+//    $urlRouterProvider.otherwise('/');
   });
