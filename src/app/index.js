@@ -27,8 +27,7 @@ angular.module('acidification', [
       })
       .state('what-is-oa', {
         url: '/what-is-oa',
-        templateUrl: 'components/what-is-oa/partial-what-is-oa.html',
-        controller: 'what-is-oa.controller'
+        templateUrl: 'components/what-is-oa/partial-what-is-oa.html'
       });
 
 
