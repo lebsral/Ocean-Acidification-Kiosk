@@ -25,12 +25,12 @@ angular.module('acidification', [
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       })
-      .state('home.what-is-oa', {
+      .state('what-is-oa', {
         url: '/what-is-oa',
-        templateUrl: 'app/components/what-is-oa/partial-what-is-oa.html',
+        templateUrl: 'components/what-is-oa/partial-what-is-oa.html',
         controller: 'what-is-oa.controller'
       });
 
 
-//    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
   });
