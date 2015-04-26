@@ -49,5 +49,5 @@ angular.module('acidification', [
           $scope.fishermen = ['Bob', 'Sue', 'James'];
         }
       });
-    //    $urlRouterProvider.otherwise('/');
+       $urlRouterProvider.otherwise('/');
   });
