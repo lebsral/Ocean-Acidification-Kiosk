@@ -1,4 +1,6 @@
 angular.module('acidification', [
+  'angulartics',
+  'angulartics.google.analytics',
   'ngAnimate',
   'ngCookies',
   'ngTouch',
@@ -6,13 +8,25 @@ angular.module('acidification', [
   'ngResource',
   'ui.router',
   'ngMaterial',
-  //'angulartics',
   //'com.2fdevs.videogular.analytics',
   'com.2fdevs.videogular',
   'com.2fdevs.videogular.plugins.controls',
   'com.2fdevs.videogular.plugins.overlayplay',
   'com.2fdevs.videogular.plugins.poster'
+
 ])
+
+.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
+     $rootScope
+        .$on('$stateChangeSuccess',
+            function(event){
+
+                if (!$window.ga)
+                    return;
+
+                $window.ga('send', 'pageview', { page: $location.path() });
+        });
+}])
 
   .config(function ($stateProvider, $urlRouterProvider) {
     'use strict';
