@@ -16,7 +16,6 @@
     "videogular-poster": "~1.2.0",
     "videogular-buffering": "~1.2.0",
     "videogular-themes-default": "~1.2.0",
-    "videogular-ima-ads": "~1.1.1",
     "angulartics": "~0.17.2",
     "angular-google-analytics": "~0.0.13"
   },
