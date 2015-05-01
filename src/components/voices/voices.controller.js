@@ -17,7 +17,7 @@ angular.module('acidification')
 					label: 'English'
 				}
 			],
-			theme: '../../bower_components/videogular-themes-default/videogular.css',
+			theme: '../bower_components/videogular-themes-default/videogular.css',
 			plugins: {
 				poster: 'http://www.videogular.com/assets/images/videogular.png'
 			}
