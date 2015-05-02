@@ -56,8 +56,7 @@ angular.module('acidification', [
       })
       .state('voices', {
         url: '/voices',
-        templateUrl: 'components/voices/partial-voices.html',
-        controller: 'VoicesCtrl'
+        templateUrl: 'components/voices/partial-voices.html'
       })
       .state('voices.fishermen', {
         templateUrl: 'partial-voices-fishermen.html',
