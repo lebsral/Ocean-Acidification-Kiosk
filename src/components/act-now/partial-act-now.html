@@ -1,5 +1,5 @@
 
-
+<div ng-controller="Act-NowCtrl as controller">
     <section>
 
 
@@ -15,3 +15,13 @@
      </div>
           </form>
     </section>
+
+    <ul id="example-messages" class="example-chat-messages">
+  <li ng-repeat="msg in messages">
+    <strong class="example-chat-username">{{ msg.from }}</strong>
+    {{ msg.body }}
+  </li>
+</ul>
+
+</div>
+
