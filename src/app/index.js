@@ -8,7 +8,6 @@ angular.module('acidification', [
   'ngResource',
   'ui.router',
   'ngMaterial',
-  'ngMessages',
   'firebase',
   //'com.2fdevs.videogular.analytics',
   'com.2fdevs.videogular',
