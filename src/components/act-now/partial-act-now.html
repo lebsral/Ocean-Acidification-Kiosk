@@ -8,8 +8,6 @@
 
         <input name="emailAddress" placeholder="Email..." type="email" ng-model="newEmail" required>
 
-
-
         <div ng-messages="userForm.emailAddress.$error">
           <div ng-message="required">
             You have not entered an email yet...
@@ -20,10 +18,8 @@
         </div>
       </div>
 
-
       <button type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
     </form>
-
 
   </section>
 

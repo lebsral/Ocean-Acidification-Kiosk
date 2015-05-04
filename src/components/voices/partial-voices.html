@@ -27,28 +27,5 @@
     </div>
 </div>
 
-<section>
 
-<div class="playlist">
-
-
-        <ul>
-
-            <div ng-repeat="vid in controller.videos">
-
-
-            <li><a ng-click="controller.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
-            </li>
-
-            </div>
-
-
-            <li class="animate-repeat" ng-if="results.length == 0">
-     		<strong>No results found...</strong>
-   			</li>
-
-        </ul>
- </div>
-
-</section>
 <div ui-view></div>
