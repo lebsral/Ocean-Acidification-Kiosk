@@ -1,16 +1,30 @@
-
 <div ng-controller="Act-NowCtrl as controller">
-    <section>
+  <section>
 
-   <h4>Take Action</h4>
-   <form novalidate class="simple-form">
+    <h4>Take Action</h4>
+    <form name="userForm" novalidate class="simple-form">
+      <div class="field">
+        <label for="emailAddress">Enter your email address:</label>
 
-  <input placeholder="Email..." ng-model="newEmail">
-  <button type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
-</form>
+        <input name="emailAddress" placeholder="Email..." type="email" ng-model="newEmail" required>
+
+
+
+        <div ng-messages="userForm.emailAddress.$error">
+          <div ng-message="required">
+            You have not entered an email yet...
+          </div>
+          <div ng-message="email">
+            You did not enter your email address correctly yet...
+          </div>
+        </div>
+      </div>
+
+
+      <button type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
+    </form>
 
 
   </section>
 
 </div>
-
