@@ -19,10 +19,11 @@ html {
   img.pull-right {
     width: 50px;
   }
-}
+
 
 md-toolbar.md-default-theme {
-  background-color: #d03c3c;
+  background-color: #4bb8c2
+;
 }
 
 section.jumbotron {
@@ -97,6 +98,16 @@ section.jumbotron {
 .wave1 {
   background: url(images/Shape-1.png);
 }
+.Shape_1 {
+  background-color: rgb( 75, 184, 194 );
+  position: absolute;
+  left: -173px;
+  top: 742px;
+  width: 2093px;
+  height: 781px;
+  z-index: 10;
+}
+
 
 // injector
 // endinjector
