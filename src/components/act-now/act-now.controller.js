@@ -1,10 +1,10 @@
 angular.module('acidification')
 
 
-.controller('Act-NowCtrl', ["$scope", "$firebaseArray",
+.controller('Act-NowCtrl', ['$scope', '$firebaseArray',
         function ($scope, $firebaseArray) {
     'use strict';
-    var ref = new Firebase("https://oceanacidification.firebaseio.com/");
+    var ref = new Firebase('https://oceanacidification.firebaseio.com/');
     $scope.emails = $firebaseArray(ref);
 
 

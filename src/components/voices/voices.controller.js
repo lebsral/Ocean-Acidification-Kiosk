@@ -14,7 +14,7 @@ angular.module('acidification')
         ],
       tracks: [
         {
-          src: 'http://www.videogular.com/assets/subs/pale-blue-dot.vtt',
+          src: 'transcripts/pale-blue-dot.vtt',
           kind: 'subtitles',
           srclang: 'en',
           label: 'English'
