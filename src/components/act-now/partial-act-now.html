@@ -1,6 +1,11 @@
+<div ng-controller="Act-NowCtrl as controller">
+  <section>
 
+    <h4>Take Action</h4>
+    <form>
+      <input placeholder="Email..." ng-model="newEmail">
+      <button type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
+    </form>
+  </section>
 
-    <section>
-act now and give us your email, yo!
-
-    </section>
+</div>

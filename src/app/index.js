@@ -8,6 +8,7 @@ angular.module('acidification', [
   'ngResource',
   'ui.router',
   'ngMaterial',
+  'firebase',
   //'com.2fdevs.videogular.analytics',
   'com.2fdevs.videogular',
   'com.2fdevs.videogular.plugins.controls',
@@ -56,8 +57,7 @@ angular.module('acidification', [
       })
       .state('voices', {
         url: '/voices',
-        templateUrl: 'components/voices/partial-voices.html',
-        controller: 'VoicesCtrl'
+        templateUrl: 'components/voices/partial-voices.html'
       })
       .state('voices.fishermen', {
         templateUrl: 'partial-voices-fishermen.html',
