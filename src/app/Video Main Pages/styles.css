@@ -1,0 +1,167 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1920px;
+	 height: 1080px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Shape1 
+{ 
+	 left: -173px; 
+	 top: 647px; 
+	 position: absolute; 
+	 width: 2096px;
+	 height: 833px;
+	 z-index:1;
+} 
+
+ #Shape2 
+{ 
+	 left: 1949px; 
+	 top: 58px; 
+	 position: absolute; 
+	 width: 2px;
+	 height: 3px;
+	 z-index:2;
+} 
+
+ #Shape1copy 
+{ 
+	 left: -44px; 
+	 top: 647px; 
+	 position: absolute; 
+	 width: 2096px;
+	 height: 833px;
+	 z-index:3;
+} 
+
+ #Shape1copy2 
+{ 
+	 left: -55px; 
+	 top: 662px; 
+	 position: absolute; 
+	 width: 2267px;
+	 height: 887px;
+	 z-index:4;
+} 
+
+ #RoundedRectangle1 
+{ 
+	 left: 41px; 
+	 top: 847px; 
+	 position: absolute; 
+	 width: 324px;
+	 height: 195px;
+	 z-index:5;
+} 
+
+ #RoundedRectangle1cop 
+{ 
+	 left: 408px; 
+	 top: 847px; 
+	 position: absolute; 
+	 width: 324px;
+	 height: 195px;
+	 z-index:6;
+} 
+
+ #RoundedRectangle1cop_0 
+{ 
+	 left: 758px; 
+	 top: 843px; 
+	 position: absolute; 
+	 width: 324px;
+	 height: 196px;
+	 z-index:7;
+} 
+
+ #RoundedRectangle1cop_1 
+{ 
+	 left: 1106px; 
+	 top: 843px; 
+	 position: absolute; 
+	 width: 325px;
+	 height: 196px;
+	 z-index:8;
+} 
+
+ #OCEANfacts 
+{ 
+	 left: 1178px; 
+	 top: 892px; 
+	 position: absolute; 
+	 width: 177px;
+	 height: 90px;
+	 z-index:9;
+} 
+
+ #LOOKCLOSER 
+{ 
+	 left: 821px; 
+	 top: 892px; 
+	 position: absolute; 
+	 width: 194px;
+	 height: 90px;
+	 z-index:10;
+} 
+
+ #ListenTOLOCALVOICES 
+{ 
+	 left: 442px; 
+	 top: 869px; 
+	 position: absolute; 
+	 width: 254px;
+	 height: 144px;
+	 z-index:11;
+} 
+
+ #WHATIsOceanACIDIFICA 
+{ 
+	 left: 68px; 
+	 top: 879px; 
+	 position: absolute; 
+	 width: 267px;
+	 height: 126px;
+	 z-index:12;
+} 
+
+ #Oceanchemistryischan 
+{ 
+	 left: 1428px; 
+	 top: 70px; 
+	 position: absolute; 
+	 width: 433px;
+	 height: 633px;
+	 z-index:13;
+} 
+
+ #Layer13 
+{ 
+	 left: 1508px; 
+	 top: 765px; 
+	 position: absolute; 
+	 width: 275px;
+	 height: 275px;
+	 z-index:14;
+} 
+
+ #ACTNow 
+{ 
+	 left: 1559px; 
+	 top: 837px; 
+	 position: absolute; 
+	 width: 177px;
+	 height: 136px;
+	 z-index:15;
+} 
