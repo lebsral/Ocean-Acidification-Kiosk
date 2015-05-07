@@ -6,6 +6,7 @@
     "test": "gulp test"
   },
   "devDependencies": {
+    "bower": "^1.4.1",
     "browser-sync": "~2.1.4",
     "browser-sync-spa": "~1.0.1",
     "chalk": "~0.5.1",
@@ -35,6 +36,7 @@
     "gulp-useref": "~1.1.0",
     "gulp-util": "~3.0.2",
     "http-proxy": "~1.8.0",
+    "http-server": "^0.8.0",
     "jshint-stylish": "~1.0.0",
     "karma": "~0.12.31",
     "karma-jasmine": "~0.3.1",
@@ -43,7 +45,8 @@
     "lodash": "~3.2.0",
     "main-bower-files": "~2.5.0",
     "merge-stream": "~0.1.7",
-    "protractor": "~1.7.0",
+    "phantomjs": "^1.9.16",
+    "protractor": "^2.0.0",
     "require-dir": "~0.1.0",
     "uglify-save-license": "~0.4.1",
     "wiredep": "~2.2.0",
