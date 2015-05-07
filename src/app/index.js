@@ -43,6 +43,10 @@ angular.module('acidification', [
         url: '/what-is-oa',
         templateUrl: 'components/what-is-oa/partial-what-is-oa.html'
       })
+      .state('Press-me', {
+        url: '/Press-me',
+        templateUrl: 'components/Press-me/partial-Press-me.html'
+      })
       .state('act-now', {
         url: '/act-now',
         templateUrl: 'components/act-now/partial-act-now.html'
