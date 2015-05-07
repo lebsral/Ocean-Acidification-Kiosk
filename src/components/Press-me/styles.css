@@ -16,6 +16,16 @@
 	 z-index:0;
 	} 
 
+ #Layer7 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1920px;
+	 height: 1080px;
+	 z-index:1;
+} 
+
  #Shape1 
 { 
 	 left: -174px; 
@@ -23,7 +33,7 @@
 	 position: absolute; 
 	 width: 2095px;
 	 height: 839px;
-	 z-index:1;
+	 z-index:2;
 } 
 
  #Shape1copy 
@@ -33,7 +43,7 @@
 	 position: absolute; 
 	 width: 2096px;
 	 height: 838px;
-	 z-index:2;
+	 z-index:3;
 } 
 
  #Shape1copy2 
@@ -43,17 +53,27 @@
 	 position: absolute; 
 	 width: 2266px;
 	 height: 839px;
-	 z-index:3;
+	 z-index:4;
 } 
 
- #OceanAcidificationco 
+ #Ocean 
 { 
-	 left: 376px; 
-	 top: 463px; 
+	 left: 689px; 
+	 top: 462px; 
 	 position: absolute; 
-	 width: 1100px;
-	 height: 521px;
-	 z-index:4;
+	 width: 574px;
+	 height: 186px;
+	 z-index:5;
+} 
+
+ #Acidification 
+{ 
+	 left: 440px; 
+	 top: 723px; 
+	 position: absolute; 
+	 width: 1043px;
+	 height: 229px;
+	 z-index:6;
 } 
 
  #WHATIS 
@@ -63,27 +83,27 @@
 	 position: absolute; 
 	 width: 1097px;
 	 height: 176px;
-	 z-index:5;
+	 z-index:7;
 } 
 
  #Layer6 
 { 
-	 left: 1476px; 
-	 top: 578px; 
+	 left: 1501px; 
+	 top: 603px; 
 	 position: absolute; 
-	 width: 378px;
-	 height: 378px;
-	 z-index:6;
+	 width: 333px;
+	 height: 333px;
+	 z-index:8;
 } 
 
- #layer_7 
+ #layer_9 
 { 
-	 left: 1575px; 
-	 top: 650px; 
+	 left: 1591px; 
+	 top: 670px; 
 	 position: absolute; 
-	 width: 184px;
-	 height: 253px;
-	 z-index:7;
+	 width: 153px;
+	 height: 211px;
+	 z-index:9;
 } 
 
  #PREssMe 
@@ -93,5 +113,5 @@
 	 position: absolute; 
 	 width: 276px;
 	 height: 40px;
-	 z-index:8;
+	 z-index:10;
 } 
