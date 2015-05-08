@@ -1,3 +1,4 @@
+
 angular.module('acidification', [
   'angulartics',
   'angulartics.google.analytics',
@@ -22,8 +23,8 @@ angular.module('acidification', [
     $rootScope
       .$on('$stateChangeSuccess',
         function (event) {
-          if (!$window.ga)
-          return;
+          if (!$window.ga) {
+            return;}
           $window.ga('send', 'pageview', {
             page: $location.path()
           });

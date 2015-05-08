@@ -1,3 +1,5 @@
+/*global Firebase */
+
 angular.module('acidification')
 
 

@@ -1,5 +1,5 @@
 angular.module('acidification')
-  .controller('MainCtrl', function ($scope, $mdSidenav) {
+  .controller('MainCtrl', function () {
     'use strict';
 
   });
