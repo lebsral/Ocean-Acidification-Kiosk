@@ -10,12 +10,12 @@ angular.module('acidification', [
   'ui.router',
   'ngMaterial',
   'firebase',
-//  'com.2fdevs.videogular.analytics',
   'com.2fdevs.videogular',
   'com.2fdevs.videogular.plugins.controls',
   'com.2fdevs.videogular.plugins.overlayplay',
   'com.2fdevs.videogular.plugins.poster',
   'com.2fdevs.videogular.plugins.buffering'
+//  'com.2fdevs.videogular.analytics'
 ])
 
   .run(['$rootScope', '$location', '$window', function ($rootScope, $location, $window) {
