@@ -2,96 +2,96 @@
 	margin: 0;
 	padding: 0;
  }
- 
- #background 
-{ 
-	 left: 0px; 
-	 top: 0px; 
-	 position: relative; 
-	 margin-left: auto; 
-	 margin-right: auto; 
+
+ #background
+{
+	 left: 0px;
+	 top: 0px;
+	 position: relative;
+	 margin-left: auto;
+	 margin-right: auto;
 	 width: 1920px;
-	 height: 1080px; 
+	 height: 1080px;
 	 overflow: hidden;
 	 z-index:0;
-	} 
+	}
 
- #Layer9 
-{ 
-	 left: 0px; 
-	 top: 0px; 
-	 position: absolute; 
+ #Layer9
+{
+	 left: 0px;
+	 top: 0px;
+	 position: absolute;
 	 width: 1920px;
 	 height: 1080px;
 	 z-index:1;
-} 
+}
 
- #Shape1 
-{ 
-	 left: -174px; 
-	 top: 238px; 
-	 position: absolute; 
+ #Shape1
+{
+	 left: -174px;
+	 top: 238px;
+	 position: absolute;
 	 width: 2095px;
 	 height: 839px;
 	 z-index:2;
-} 
+}
 
- #Shape1copy 
-{ 
-	 left: -81px; 
-	 top: 243px; 
-	 position: absolute; 
+ #Shape1copy
+{
+	 left: -81px;
+	 top: 243px;
+	 position: absolute;
 	 width: 2096px;
 	 height: 838px;
 	 z-index:3;
-} 
+}
 
- #Shape1copy2 
-{ 
-	 left: -51px; 
-	 top: 273px; 
-	 position: absolute; 
+ #Shape1copy2
+{
+	 left: -51px;
+	 top: 273px;
+	 position: absolute;
 	 width: 2266px;
 	 height: 839px;
 	 z-index:4;
-} 
+}
 
- #bg 
-{ 
-	 left: 456px; 
-	 top: 113px; 
-	 position: absolute; 
+ #bg
+{
+	 left: 456px;
+	 top: 113px;
+	 position: absolute;
 	 width: 1032px;
 	 height: 120px;
 	 z-index:5;
-} 
+}
 
- #Layer10 
-{ 
-	 left: 48px; 
-	 top: 109px; 
-	 position: absolute; 
+ #Layer10
+{
+	 left: 48px;
+	 top: 109px;
+	 position: absolute;
 	 width: 367px;
 	 height: 128px;
 	 z-index:6;
-} 
+}
 
- #Layer11 
-{ 
-	 left: 1557px; 
-	 top: 103px; 
-	 position: absolute; 
+ #Layer11
+{
+	 left: 1557px;
+	 top: 103px;
+	 position: absolute;
 	 width: 292px;
 	 height: 140px;
 	 z-index:7;
-} 
+}
 
- #Enteryouremail 
-{ 
-	 left: 505px; 
-	 top: 154px; 
-	 position: absolute; 
+ #Enteryouremail
+{
+	 left: 505px;
+	 top: 154px;
+	 position: absolute;
 	 width: 350px;
 	 height: 45px;
 	 z-index:8;
-} 
+}
