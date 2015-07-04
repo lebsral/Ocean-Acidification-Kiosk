@@ -8,7 +8,7 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
   overflow: hidden;
   z-index: 0; }
@@ -17,7 +17,7 @@ body {
   left: 0px;
   top: 0px;
   position: absolute;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
   z-index: 1; }
 
@@ -33,7 +33,7 @@ body {
   left: -81px;
   top: 243px;
   position: absolute;
-  width: 2096px;
+  width: 100%;
   height: 838px;
   z-index: 3; }
 
@@ -92,5 +92,13 @@ body {
   width: 276px;
   height: 40px;
   z-index: 10; }
+
+#yellowishSky {
+  width: 100%;
+  height: 46.6%;
+  top: 0px;
+  left: 0px;
+  z-index:11;
+}
 
 /*# sourceMappingURL=styles.css.map */

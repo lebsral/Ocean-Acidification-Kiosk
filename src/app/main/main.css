@@ -3,4 +3,13 @@
 /*# sourceMappingURL=main.css.map */
 .blockyfontfooter {
   font: 900 50px NexaRustSans;
+  font-size: 50px;
+  color: #ff9b05;
+}
+#yellowishSky {
+  width: 100%;
+  height: 46.6%;
+  top: 0px;
+  left: 0px;
+  z-index:11;
 }
