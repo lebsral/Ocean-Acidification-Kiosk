@@ -1,30 +1,52 @@
 'use strict';
 
+var path = require('path');
+var conf = require('./gulp/conf');
+
+var _ = require('lodash');
+var wiredep = require('wiredep');
+
+function listFiles() {
+  var wiredepOptions = _.extend({}, conf.wiredep, {
+    dependencies: true,
+    devDependencies: true
+  });
+
+  return wiredep(wiredepOptions).js
+    .concat([
+      path.join(conf.paths.src, '/app/**/*.module.js'),
+      path.join(conf.paths.src, '/app/**/*.js'),
+      path.join(conf.paths.src, '/**/*.spec.js'),
+      path.join(conf.paths.src, '/**/*.mock.js'),
+      path.join(conf.paths.src, '/**/*.html')
+    ]);
+}
+
 module.exports = function(config) {
 
   var configuration = {
-    autoWatch : false,
+    files: listFiles(),
 
-    frameworks: ['jasmine'],
+    singleRun: true,
+
+    autoWatch: false,
+
+    frameworks: ['jasmine', 'angular-filesort'],
+
+    angularFilesort: {
+      whitelist: [path.join(conf.paths.src, '/**/!(*.html|*.spec|*.mock).js')]
+    },
 
     ngHtml2JsPreprocessor: {
       stripPrefix: 'src/',
-      moduleName: 'gulpAngular'
+      moduleName: 'acidification'
     },
 
     browsers : ['PhantomJS'],
 
-     files: [
-      'app/bower_components/jquery/dist/*.js',
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-ui-router/release/angular-ui-router.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'src/**/*.js'
-    ],
-
     plugins : [
       'karma-phantomjs-launcher',
+      'karma-angular-filesort',
       'karma-jasmine',
       'karma-ng-html2js-preprocessor'
     ],

@@ -1,68 +1,30 @@
 <!doctype html>
 <html ng-app="acidification">
+  <head>
+    <meta charset="utf-8">
+    <title>acidification</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<head>
-  <meta charset="utf-8">
-  <title>acidification</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:css({.tmp/serve,src}) styles/app.css -->
-  <!-- inject:css -->
-  <!-- css files will be automatically insert here -->
-  <!-- endinject -->
-  <!-- endbuild -->
-</head>
-
-<body>
-  <!--[if lt IE 10]>
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div ui-view>
-    <!-- We'll also add some navigation: -->
-  </div>
 
-
-
-
-  <footer>
-    <md-toolbar layout="row" layout-align="center center">
-     <div class="blockyfontfooter">What is</div>
-      <md-button ui-sref="what-is-oa"><br> <div>Ocean Acidification?</div>
-
-      </md-button>
-      <md-button class="md-raised" ui-sref="voices">Voices</md-button>
-      <md-button class="md-raised" ui-sref="look-closer">Look Closer</md-button>
-      <md-button class="md-raised" ui-sref="oa-facts">OA Facts</md-button>
-      <md-button class="Rounded-Rectangle-3" ui-sref="act-now">Act Now</md-button>
-    </md-toolbar>
-  </footer>
-  <ng-include <!-- Google Analytics: change UA-XXXXX-X to be your site 's ID. -->
-   <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-61219201-1', {'cookieDomain':'none'});
-    </script>
-
-
-
-   <script>
-  window.intercomSettings = {
-    app_id: "n3pftd2y",
-  };
-</script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/n3pftd2y';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-
+    <div ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
