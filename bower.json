@@ -19,7 +19,8 @@
     "videogular-themes-default": "~1.2.4",
     "videogular-controls": "~1.2.4",
     "videogular-buffering": "~1.2.4",
-    "videogular-overlay-play": "~1.2.4"
+    "videogular-overlay-play": "~1.2.4",
+    "videogular-poster": "~1.2.4"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
