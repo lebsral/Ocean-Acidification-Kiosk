@@ -1,4 +1,5 @@
-<div layout="vertical" layout-fill>
+
+  <div layout="vertical" layout-fill>
 
   <md-content>
     <header>
@@ -8,7 +9,7 @@
     <section class="jumbotron">
       <h1>'Allo, 'Allo!</h1>
       <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
+        <br>
         Always a pleasure scaffolding your apps.
       </p>
       <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
@@ -17,10 +18,73 @@
       </p>
     </section>
 
+
+
+
+        <div class="videogular-container">
+        <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
+            <vg-media vg-src="main.config.sources"
+                      vg-tracks="main.config.tracks">
+            </vg-media>
+
+            <vg-controls>
+                <vg-play-pause-button></vg-play-pause-button>
+
+                <vg-scrub-bar>
+                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                </vg-scrub-bar>
+
+
+                <vg-fullscreen-button></vg-fullscreen-button>
+                <vg-tracks></vg-tracks>
+            </vg-controls>
+
+            <vg-overlay-play></vg-overlay-play>
+            <vg-buffering></vg-buffering>
+            <vg-poster vg-url='main.config.plugins.poster'></vg-poster>
+        </videogular>
+    </div>
+    <div class="playlist">
+
+{{main.videos}}
+
+
+<form class="form-inline">
+      <input ng-model="query" type="text"
+        placeholder="Filter by" autofocus>
+
+    </form>
+
+
+
+        <ul  class="example-animate-container">
+
+            <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 9">
+
+
+            <li animate="animate-repeat" ><a ng-click="main.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
+            </li>
+
+            </div>
+
+            <li class="animate-repeat" ng-if="results.length == 0">
+     		<strong>No results found...</strong>
+   			</li>
+
+        </ul>
+ </div>
+
+
+
+
+
+
+
+
     <div class="techs" layout-align="center">
       <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
         <div class="thumbnail">
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+
           <div class="caption">
             <h3>{{ awesomeThing.title }}</h3>
             <p>{{ awesomeThing.description }}</p>
