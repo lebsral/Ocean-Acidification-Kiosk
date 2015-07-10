@@ -1,0 +1,21 @@
+
+
+  <div layout="vertical" layout-fill>
+
+  <md-content>
+    <header>
+      <acme-navbar creationDate="main.creationDate" />
+    </header>
+
+
+  <form>
+			<div id="bg"><input type="text"></div>
+
+			<input placeholder="Email..." ng-model="newEmail">
+      <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
+
+    </form>
+
+  </md-content>
+
+</div>

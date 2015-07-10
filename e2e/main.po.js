@@ -6,6 +6,8 @@
 'use strict';
 
 var MainPage = function() {
+  this.NavBar = element(by.id('navID'));
+  this.NavButtonL = element(by.cssContainingText('.md-raised', 'Look Closer'));
   this.jumbEl = element(by.css('.jumbotron'));
   this.h1El = this.jumbEl.element(by.css('h1'));
   this.imgEl = this.jumbEl.element(by.css('img'));
