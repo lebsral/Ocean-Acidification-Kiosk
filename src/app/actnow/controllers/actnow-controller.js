@@ -7,7 +7,15 @@
  * Controller of the acidification
  */
 angular.module('acidification')
-  .controller('actnowCtrl', function ($scope, $firebaseArray) {
+  .controller('actnowCtrl', function ($scope, ngAutocomplete, $firebaseArray) {
+
+
+    $scope.result2 = '';
+    $scope.options2 = {
+      country: 'ca',
+      types: '(cities)'
+    };
+    $scope.details2 = '';
 
 
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');

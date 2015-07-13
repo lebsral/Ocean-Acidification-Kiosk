@@ -14,6 +14,12 @@
 			<input placeholder="Last Name..." ng-model="newLastName">
 			<input placeholder="City..." ng-model="newCity">
 
+			<div class="form-group move-down">
+        <label for="Autocomplete">Generic Autocomplete</label>
+        <input type="text" id="Autocomplete" class="form-control" ng-autocomplete="result1" details="details1" options="options1"/>
+    </div>
+    <div>result: {{result}}</div>
+
 			<input placeholder="Email..." ng-model="newEmail">
       <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity);newEmail = null; newFirstName = null;newLastName = null; newCity = null">send</button>
 
