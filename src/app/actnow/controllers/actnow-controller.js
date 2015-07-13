@@ -7,29 +7,29 @@
  * Controller of the acidification
  */
 angular.module('acidification')
-  .controller('actnowCtrl', function ($scope, ngAutocomplete, $firebaseArray) {
+  .controller('actnowCtrl', function ($scope, $firebaseArray) {
 
 
-    $scope.result2 = '';
-    $scope.options2 = {
-      country: 'ca',
-      types: '(cities)'
+    $scope.place = null;
+    $scope.autocompleteOptions = {
+      types: ['cities']
     };
-    $scope.details2 = '';
+
 
 
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');
     $scope.emails = $firebaseArray(ref);
 
   // provide a method for adding an email
-    $scope.addEmail = function (newEmail, newFirstName, newLastName, newCity) {
+    $scope.addEmail = function (newEmail, newFirstName, newLastName, newCity, newPlace) {
       if (newEmail) {
         // push a message to the end of the array
         $scope.emails.$add({
           emailAddress: newEmail,
           firstName: newFirstName,
           lastName: newLastName,
-          city: newCity
+          city: newCity,
+          place: newPlace
 
         });
 
