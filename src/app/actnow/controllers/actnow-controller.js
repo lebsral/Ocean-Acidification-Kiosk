@@ -14,12 +14,13 @@ angular.module('acidification')
     $scope.emails = $firebaseArray(ref);
 
   // provide a method for adding an email
-    $scope.addEmail = function (newEmail, newFirstName) {
+    $scope.addEmail = function (newEmail, newFirstName, newLastName) {
       if (newEmail) {
         // push a message to the end of the array
         $scope.emails.$add({
           emailAddress: newEmail,
-          firstName: newFirstName
+          firstName: newFirstName,
+          lastName: newLastName
 
         });
 
