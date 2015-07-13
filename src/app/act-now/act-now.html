@@ -10,9 +10,10 @@
 
   <form>
 			<div id="bg"><input type="text"></div>
+			<input placeholder="First Name..." ng-model="newFirstName">
 
 			<input placeholder="Email..." ng-model="newEmail">
-      <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail);newEmail = null;">send</button>
+      <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName);newEmail = null; newFirstName = null">send</button>
 
     </form>
 
