@@ -17,7 +17,8 @@
       .state('act-now', {
         url: '/act-now',
         templateUrl: 'app/act-now/act-now.html',
-        controller: 'ActnowController'
+        controller: 'actnowCtrl',
+        controllerAs: 'actnow'
       });
 
     $urlRouterProvider.otherwise('/');

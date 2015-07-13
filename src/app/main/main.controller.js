@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -18,21 +18,21 @@
     vm.API = null;
     vm.currentVideo = 0;
 
-    vm.onPlayerReady = function(API) {
-    vm.API = API;
-      };
+    vm.onPlayerReady = function (API) {
+      vm.API = API;
+    };
 
-    vm.onCompleteVideo = function() {
-                console.log("on complete 1")
-                vm.isCompleted = true;
+    vm.onCompleteVideo = function () {
+      console.log("on complete 1");
+      vm.isCompleted = true;
 
-                vm.currentVideo++;
+      vm.currentVideo++;
 
-                if (vm.currentVideo >= vm.videos.length) vm.currentVideo = 0;
+      if (vm.currentVideo >= vm.videos.length) vm.currentVideo = 0;
 
-                vm.setVideo(vm.currentVideo);
+      vm.setVideo(vm.currentVideo);
 
-            };
+    };
 
 
     vm.videos = [
@@ -93,7 +93,7 @@
     function getWebDevTec() {
       vm.awesomeThings = webDevTec.getTec();
 
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
+      angular.forEach(vm.awesomeThings, function (awesomeThing) {
         awesomeThing.rank = Math.random();
       });
     }

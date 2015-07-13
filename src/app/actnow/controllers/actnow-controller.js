@@ -1,13 +1,14 @@
-(function () {
-  'use strict';
+'use strict';
+/**
+ * @ngdoc function
+ * @name acidification.controller:actnowCtrl
+ * @description
+ * # actnowCtrl
+ * Controller of the acidification
+ */
+angular.module('acidification')
+  .controller('actnowCtrl', function ($scope, $firebaseArray) {
 
-  angular
-    .module('acidification')
-    .controller('ActnowController', ActnowController);
-
-  /** @ngInject */
-  function ActnowController($scope, $firebaseArray) {
-    var vm = this;
 
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');
     $scope.emails = $firebaseArray(ref);
@@ -22,4 +23,5 @@
 
       }
     };
-  } });
+
+  });
