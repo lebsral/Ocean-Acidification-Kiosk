@@ -15,13 +15,15 @@
 			<input placeholder="City..." ng-model="newCity"><br>
 			 <input placeholder="Place..." class="form-control" g-places-autocomplete ng-model="newPlace"/><br>
 
-<input placeholder="Email..." ng-model="newEmail">
+<input placeholder="Email..." ng-model="newEmail"><br>
 
-<input type="checkbox" name="newOAList" value="True" checked="checked" ng-model="newOAList"> more informtion on OA<br>
+<!--<input type="checkbox" name="newOAList" value="OA" ng-model="newOAList" checked="checked"> more informtion on OA<br>-->
 
+<md-checkbox ng-model="checkboxModel.newOAList">More info about OA</md-checkbox>
+      <md-checkbox ng-model="checkboxModel.newCoalList">More info Coal</md-checkbox>
+      <md-checkbox ng-model="checkboxModel.newLegList">More info about Legislation</md-checkbox>
 
-
-      <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newPlace);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newPlace = null">send</button>
+      <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newPlace);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newPlace = null; newOAList = True">send</button>
 
 
 
