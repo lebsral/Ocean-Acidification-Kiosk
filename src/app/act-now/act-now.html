@@ -10,24 +10,21 @@
 
   <form>
 			<div id="bg"><input type="text"></div>
-			<input placeholder="First Name..." ng-model="newFirstName">
-			<input placeholder="Last Name..." ng-model="newLastName">
-			<input placeholder="City..." ng-model="newCity">
-			 <input placeholder="Place..." class="form-control" g-places-autocomplete ng-model="newPlace"/>
+			<input placeholder="First Name..." ng-model="newFirstName"><br>
+			<input placeholder="Last Name..." ng-model="newLastName"><br>
+			<input placeholder="City..." ng-model="newCity"><br>
+			 <input placeholder="Place..." class="form-control" g-places-autocomplete ng-model="newPlace"/><br>
 
-			<div class="form-group move-down">
-<!--
-        <label for="Autocomplete">Generic Autocomplete</label>
-        <input type="text" id="Autocomplete" class="form-control" ng-autocomplete="result1" details="details1" options="options1"/>
--->
-    </div>
+<input placeholder="Email..." ng-model="newEmail">
+
+<input type="checkbox" name="newOAList" value="True" checked="checked" ng-model="newOAList"> more informtion on OA<br>
 
 
-			<input placeholder="Email..." ng-model="newEmail">
+
       <button class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newPlace);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newPlace = null">send</button>
 
 
-   <div>result: {{result}}</div>
+
     </form>
 
   </md-content>
