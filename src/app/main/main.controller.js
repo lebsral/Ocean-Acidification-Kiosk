@@ -36,51 +36,55 @@
 
 
     vm.videos = [
-            {
-                sources: [
-                    {src: $sce.trustAsResourceUrl("../assets/videos/Dune.mov"),
-                    type: "video/mov",
-                    tags: ["What"],
-                	name: "Acidifying the Ocean   Assessing Impacts on Coral Reefs"}
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/Dune.mov"),
+            type: "video/mov",
+            tags: ["What"],
+            name: "Acidifying the Ocean   Assessing Impacts on Coral Reefs"
+          }
                     ]
             },
-            {
-                sources: [
-                    {src: $sce.trustAsResourceUrl("assets/videos/Frank.mov"),
-                    type: "video/mov",
-                    tags: ["What"],
-                 	name: "Franks vid"}
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("assets/videos/Frank.mov"),
+            type: "video/mov",
+            tags: ["What"],
+            name: "Franks vid"
+          }
                    ]
             }
         ];
 
-               vm.config = {
-                preload: "none",
-                autoHide: false,
-                autoHideTime: 300000,
-                autoPlay: true,
-                sources: vm.videos[0].sources,
-                theme: {
-                    url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
-                },
-                plugins: {
-                    poster: "http://www.akmarine.org/wp-content/themes/akmarine/images/logo.png"
-                }
-            };
+    vm.config = {
+      preload: "none",
+      autoHide: false,
+      autoHideTime: 300000,
+      autoPlay: true,
+      sources: vm.videos[0].sources,
+      theme: {
+        url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
+      },
+      plugins: {
+        poster: "http://www.akmarine.org/wp-content/themes/akmarine/images/logo.png"
+      }
+    };
 
-            vm.setVideo = function(index) {
-                vm.API.stop();
-                vm.currentVideo = index;
-                vm.config.sources = vm.videos[index].sources;
-                $timeout(vm.API.play.bind(vm.API), 100);
-            };
+    vm.setVideo = function (index) {
+      vm.API.stop();
+      vm.currentVideo = index;
+      vm.config.sources = vm.videos[index].sources;
+      $timeout(vm.API.play.bind(vm.API), 100);
+    };
 
 
     activate();
 
     function activate() {
       getWebDevTec();
-      $timeout(function() {
+      $timeout(function () {
         vm.classAnimation = 'rubberBand';
       }, 4000);
     }

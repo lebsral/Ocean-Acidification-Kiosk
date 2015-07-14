@@ -23,7 +23,7 @@ angular.module('acidification')
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');
     $scope.emails = $firebaseArray(ref);
 
-  // provide a method for adding an email
+    // provide a method for adding an email
     $scope.addEmail = function (newEmail, newFirstName, newLastName, newCity, newOAList, newCoalList, newLegList) {
       if (newEmail) {
         // push a message to the end of the array
