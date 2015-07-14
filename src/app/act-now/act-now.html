@@ -4,14 +4,18 @@
 
   <md-content>
     <header>
-      <acme-navbar creationDate="main.creationDate" />
+      <acme-navbar/>
     </header>
 
 
 
-  <form>
-<md-input-container>
-			<input required placeholder="First Name..." ng-model="newFirstName"><br></md-input-container>
+  <form name="userForm">
+<md-input-container><input required placeholder="First Name..." ng-model="newFirstName" md-maxlength="" minlength="1"><br>
+       <div ng-messages="userForm.newFirstName.$error" ng-show="userForm.lastName.$dirty">
+      <div ng-message="required">This is required!</div>
+      <div ng-message="md-maxlength">That's too long!</div>
+      <div ng-message="minlength">That's too short!</div>
+    </div></md-input-container>
     <md-input-container><input required placeholder="Last Name..." ng-model="newLastName"><br></md-input-container>
     <md-input-container><input required placeholder="City..." ng-model="newCity"><br></md-input-container>
 
