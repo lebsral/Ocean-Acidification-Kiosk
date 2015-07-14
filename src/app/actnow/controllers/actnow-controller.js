@@ -9,13 +9,11 @@
 angular.module('acidification')
   .controller('actnowCtrl', function ($scope, $firebaseArray) {
 
-    $scope.newOAList = true;
 
-    $scope.checkboxModel = {
-      newOAList : true,
-      newCoalList : false,
-      newLegList: false
-    };
+    $scope.newOAList = true;
+    $scope.newCoalList = false;
+    $scope.newLegList = false;
+
 
     $scope.place = null;
     $scope.autocompleteOptions = {
@@ -26,7 +24,7 @@ angular.module('acidification')
     $scope.emails = $firebaseArray(ref);
 
   // provide a method for adding an email
-    $scope.addEmail = function (newEmail, newFirstName, newLastName, newCity, newPlace, newOAList) {
+    $scope.addEmail = function (newEmail, newFirstName, newLastName, newCity, newOAList, newCoalList, newLegList) {
       if (newEmail) {
         // push a message to the end of the array
         $scope.emails.$add({
@@ -34,8 +32,9 @@ angular.module('acidification')
           firstName: newFirstName,
           lastName: newLastName,
           city: newCity,
-          place: newPlace,
-          OAList: newOAList
+          OAList: newOAList,
+          coalList: newCoalList,
+          LegList: newLegList
 
         });
 
