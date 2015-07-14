@@ -10,23 +10,22 @@
 
 
   <form>
-			<div id="bg"><input type="text"></div>
-			<input required placeholder="First Name..." ng-model="newFirstName"><br>
-			<input required placeholder="Last Name..." ng-model="newLastName"><br>
-			<input required placeholder="City..." ng-model="newCity"><br>
+<md-input-container>
+			<input required placeholder="First Name..." ng-model="newFirstName"><br></md-input-container>
+    <md-input-container><input required placeholder="Last Name..." ng-model="newLastName"><br></md-input-container>
+    <md-input-container><input required placeholder="City..." ng-model="newCity"><br></md-input-container>
 
-<input required placeholder="Email..." ng-model="newEmail"><br>
+    <md-input-container><input required placeholder="Email..." ng-model="newEmail"><br></md-input-container>
 
-<md-checkbox ng-model="newOAList" aria-label="on OA info list">More info about OA</md-checkbox>
-      <md-checkbox ng-model="newCoalList" aria-label="on Coal list">More info Coal</md-checkbox>
-      <md-checkbox ng-model="newLegList" aria-label="on Legislationlist">More info about Legislation</md-checkbox>
+    <md-input-container><md-checkbox ng-model="newOAList" aria-label="on OA info list">More info about OA</md-checkbox></md-input-container>
+    <md-input-container>  <md-checkbox ng-model="newCoalList" aria-label="on Coal list">More info Coal</md-checkbox></md-input-container>
+    <md-input-container>  <md-checkbox ng-model="newLegList" aria-label="on Legislationlist">More info about Legislation</md-checkbox></md-input-container>
 
 
-      <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button>
+    <md-input-container> <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button></md-input-container>
 
 
     </form>
-
 
   </md-content>
 
