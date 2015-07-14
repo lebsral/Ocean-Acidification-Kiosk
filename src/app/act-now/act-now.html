@@ -1,7 +1,5 @@
 <md-content>
 
-
-
   <form name="userForm">
     <md-input-container>
       <input required placeholder="First Name..." ng-model="newFirstName">
@@ -14,6 +12,11 @@
     </md-input-container>
     <md-input-container>
       <input required placeholder="City..." ng-model="newCity">
+      <br>
+    </md-input-container>
+
+    <md-input-container>
+      <input g-places-autocomplete options="autocompleteOptions" force-selection="true" placeholder="City, State..." ng-model="newPlace">
       <br>
     </md-input-container>
 
@@ -34,12 +37,16 @@
 
 
     <md-input-container>
-      <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newCity, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newCity = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button>
+      <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button>
     </md-input-container>
 
 
   </form>
   <md-content>
+
+           <h5>Result:</h5>
+<!--            <pre>{{newPlace | json}}</pre>-->
+            <pre>{{autocompleteOptions| json}}</pre>
     <header>
       <acme-navbar/>
     </header>
