@@ -10,11 +10,7 @@
 
 
   <form name="userForm">
-<md-input-container><input required placeholder="First Name..." ng-model="newFirstName" md-maxlength="" minlength="1"><br>
-       <div ng-messages="userForm.newFirstName.$error" ng-show="userForm.lastName.$dirty">
-      <div ng-message="required">This is required!</div>
-      <div ng-message="md-maxlength">That's too long!</div>
-      <div ng-message="minlength">That's too short!</div>
+<md-input-container><input required placeholder="First Name..." ng-model="newFirstName"><br>
     </div></md-input-container>
     <md-input-container><input required placeholder="Last Name..." ng-model="newLastName"><br></md-input-container>
     <md-input-container><input required placeholder="City..." ng-model="newCity"><br></md-input-container>
