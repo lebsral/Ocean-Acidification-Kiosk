@@ -10,16 +10,13 @@ angular.module('acidification')
   .controller('actnowCtrl', function ($scope, $firebaseArray) {
 
     $scope.newPlace = null;
-
     $scope.autocompleteOptions = {
       types: ['(cities)']
     };
 
-
     $scope.newOAList = true;
     $scope.newCoalList = false;
     $scope.newLegList = false;
-
 
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');
     $scope.emails = $firebaseArray(ref);
@@ -37,8 +34,6 @@ angular.module('acidification')
           coalList: newCoalList,
           LegList: newLegList
         });
-
       }
     };
-
   });
