@@ -42,7 +42,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/AlexusKwachka.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "I think ocean acidification is going to be key, and it’s affecting the colder regions at a more rapid rate than they thought.<br/>It’s going to have a huge detrimental impact. You know some of the things I thought about with ocean acidification was oh yeah, well we’re not going to have as many you know crab or corals or whatever, but I never put it down on the plankton level. And when you put it down to the plankton level that becomes a pretty scary, scary reality.",
             tags: ["What"],
             name: "Alexus Kwachka"
           }
@@ -53,7 +53,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/AngelaDoroff.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "Everything functions in relation to something else, and humans are part of that, humans are part of that coastal ecosystem.<br/>I’m Angela Doroff and currently I’m the research coordinator at the Kachemak Bay Research Reserve.<br/>That food web has a rhythm, it has a balance, and when we introduce a very strong perturbation, whether that’s an oil spill or ocean acidification, that changes the rhythm. And things do adapt and they respond and they shift, but when they need to shift very rapidly, we upset a whole balance, and it’s a bit of a Pandora’s box.<br/>It’s going to be in fact impacting our fisheries, both shell fisheries and fin fisheries, just by nature of food resources. Where those dynamics are going to happen, which changes are going to happen in that system we don’t really fully understand because it’s a very complex process right now.",
             tags: ["What"],
             name: "Angela Doroff"
           }
@@ -75,7 +75,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/ChrisHoldred.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "So ocean acidification, which is basically the level of acidity — or one could think how much pH is in the ocean — is one of those properties that’s fundamental to how life works.<br/>I’m Kris Holderied, I’m an oceanographer with the National Oceanic and Atmospheric Administration, and I’m the director for the NOAA Kasitsna Bay Laboratory.<br/>One of the ways I like to think about it is pH is important within our bodies. So within the ocean, a lot of biological processes — whether you’re talking about how fish live, how shells are formed for organisms like oysters or shellfish or even little plankton — all of that is controlled partially by the level of acidity or pH.<br/>Alaska has a challenge that our waters — the North Pacific waters — are naturally low in pH. (Through) processes that have to do with ocean circulation and phytoplankton bloom, just basic physical and biological processes. But then when you take that and you add more CO2 from the atmosphere into the ocean and you drive the acidification level lower, it goes over a tipping point. So we’re just closer to that tipping point and so it’s easier for us to get into corrosive conditions than in some other places in the world.",
             tags: ["What"],
             name: "Kris Holderied"
           }
@@ -86,7 +86,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/Clem.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "There’s a lot of carbon going into the ocean. A lot of it’s our fault. The ocean acidification is going to cause mankind a real impact. I consider it one of the most serious environmental problems we have. It’s shame that we can’t — being supposedly an intelligent organism — can’t figure it out. We’re not doing it.<br/>But man can solve some problems. When 4500 people dropped dead from emphysema in London, they cleared it up. And the famous London fogs do not exist today. And so if somebody can explain it that clearly, like they did to the English there, they did it. But we don’t react until something that drastic happens, sad to say.",
             tags: ["What"],
             name: "Clem Tillion"
           }
@@ -97,7 +97,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/DanFalvey.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "Supposedly there’s a lens of water that forms just off of Sitka every year that actually has a pH that is so low that it actually will dissolve the calcium in fish.<br/>My name is Dan Falvey and I’ve been a commercial fisherman here in Sitka for 33 years now. In the winter time I work with the Alaska Longline Fisherman’s Association to help manage projects that let fishermen work on some of the resource issues that they see need working on, using the tools and using their understanding to help solve their problems. <br/>To really solve some of the resource issues that affect coastal communities and fishermen you need the partnership between fishermen, managers and the scientific community. Because it’s true, the devil is in the details. Then you can actually get the solutions you want while you’re minimizing the impacts on the resource and the community residents.",
             tags: ["What"],
             name: "Dan Falvey"
           }
@@ -108,7 +108,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/Dune.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "People should be concerned about what’s happening to our oceans as well as climate change, because they’re both related and they both will adversely impact not only our cultures and the way we live but our relationship to the land and the sea.<br/>My name is Dune Lankard, I’m an Eyak Athabascan from Cordova, Prince William Sound region, Copper River Delta, and I’ve pretty much been a lifetime commercial fisherman and subsistence person in the entire region.<br/>And now with ocean acidification and climate change our community and our habitat may not be resilient enough — and I don’t think we can get to the moon fast enough. So if we can figure out to address these problems at home and quickly then maybe by taking action now we can make a difference while it still matters.<br/>If we’re going to win this battle everybody has got to get involved and do something quickly.",
             tags: ["What"],
             name: "Dune Lankard"
           }
@@ -119,7 +119,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/Frank.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "For over 24 years now Unalaska is the number one fishing port — commercial fishing port — in the nation. A large part of the things we do are the pollock fishery, codfish, but a major portion with some of the highest value, are our crab fisheries.<br/>My name is Frank Kelty, I’m a 44-year resident of Unalaska Dutch Harbor in the Aleutian Islands. Right now I’m the fisheries advisor for the City of Unalaska. Before that I worked 30 years in the Alaska seafood industry, usually as a crab plant manager, but also did codfish and other species, and was a longtime elected official in my community. I spent 10 years as mayor.<br/>Most people haven’t even heard the term acidification. People should start thinking about what’s going on. One of the big drivers of acidification is the CO2 in the water, you know…if it’s coming from our country or Asia, and impacting our water systems on the ocean, I think that should be a concern.",
             tags: ["What"],
             name: "Frank Kelty"
           }
@@ -139,20 +139,9 @@
       {
         sources: [
           {
-            src: $sce.trustAsResourceUrl("../assets/videos/Jeremy.mov"),
-            type: "video/mov",
-            trans: "",
-            tags: ["What"],
-            name: "Jeremy"
-          }
-        ]
-      },
-      {
-        sources: [
-          {
             src: $sce.trustAsResourceUrl("../assets/videos/KimWilliams.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "I think when you talk about ocean acidification, it’s what is the impact, and what is the domino effect.<br/>Kimberly Williams, born and raised in Dillingham, and I always tell everybody that I’ll die in Dillingham, I will be buried here in Dillingham.<br/>So if we know the acid in our ocean is rising, what is the impact on the creatures that are out there and then everything else that eats that creature that doesn’t have that shell anymore. So what is that going to do through the ecosystem, and it’s really a domino effect.<br/>If pink salmon are not getting their food source, what’s happening to our Chinook and our coho and our sockeye? If that’s a food source for them, what will they turn to as an alternative? And will something happen to them?",
             tags: ["What"],
             name: "Kim Williams"
           }
@@ -185,7 +174,7 @@
           {
             src: $sce.trustAsResourceUrl("assets/videos/Shalin.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "Ocean chemistry is changing at one of the fastest rates ever in Earth’s history. And we know that marine species can live in a variety of chemistry environments, but we know that marine ecosystems and the species that comprise them respond to change. And in periods in Earth’s history where we’ve seen a big drop in pH, an acidification event, there have been turnover of marine ecosystems, marine species. And they’ve changed.<br/>My name is Shallin Busch, and I’m a scientist for NOAA, which is the National Oceanic and Atmospheric Administration.<br/>So the impacts of ocean acidification on marine ecosystems can happen in a variety of ways. And what’s interesting to think about is that for ecosystems to change not all species inside of the ecosystem need to be sensitive directly to changes in carbon chemistry.<br/>What we’re concerned about is charismatic species, that get a lot of attention by society and people really care about — like birds and whales and big fish like salmon — might be affected by ocean acidification because of the impacts on the prey.",
             tags: ["What"],
             name: "Dr. Shallin Busch"
           }
