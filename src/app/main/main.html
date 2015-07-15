@@ -45,7 +45,9 @@
       <input ng-model="query" type="text" placeholder="Filter by" autofocus>
     </form>
 
+{{ main.config.sources[0].tags[0] }}
 
+   {{ main.config.tracks }}
     <ul>
 
       <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 25">
