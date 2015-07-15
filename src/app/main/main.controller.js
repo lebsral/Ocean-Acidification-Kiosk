@@ -39,24 +39,147 @@
       {
         sources: [
           {
-            src: $sce.trustAsResourceUrl("../assets/videos/Dune.mov"),
+            src: $sce.trustAsResourceUrl("../assets/videos/AlexusKwachka.mov"),
             type: "video/mov",
+            trans: "",
             tags: ["What"],
-            name: "Acidifying the Ocean   Assessing Impacts on Coral Reefs"
+            name: "AlexusKwachka"
           }
-                    ]
-            },
+        ]
+      },
       {
         sources: [
           {
-            src: $sce.trustAsResourceUrl("assets/videos/Frank.mov"),
+            src: $sce.trustAsResourceUrl("../assets/videos/AngelaDoroff.mov"),
             type: "video/mov",
+            trans: "",
             tags: ["What"],
-            name: "Franks vid"
+            name: "AngelaDoroff"
           }
-                   ]
-            }
-        ];
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/BobFoy.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Dr. Robert Foy"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/ChrisHoldred.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "ChrisHoldred"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/Clem.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Clem"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/DanFalvey.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "DanFalvey"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/Dune.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Dune"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/Frank.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Frank"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/IslandsInstitute.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "IslandsInstitute"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/Jeremy.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Jeremy"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/KimWilliams.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "KimWilliams"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/LookCloser.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "LookCloser"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("assets/videos/Shalin.mov"),
+            type: "video/mov",
+            trans: "",
+            tags: ["What"],
+            name: "Shalin"
+          }
+        ]
+      }
+    ];
 
     vm.config = {
       preload: "none",
