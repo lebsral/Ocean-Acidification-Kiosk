@@ -17,6 +17,7 @@
     vm.state = null;
     vm.API = null;
     vm.currentVideo = 0;
+    vm.currentTrans = 0;
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
@@ -43,7 +44,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "AlexusKwachka"
+            name: "Alexus Kwachka"
           }
         ]
       },
@@ -54,7 +55,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "AngelaDoroff"
+            name: "Angela Doroff"
           }
         ]
       },
@@ -63,7 +64,7 @@
           {
             src: $sce.trustAsResourceUrl("../assets/videos/BobFoy.mov"),
             type: "video/mov",
-            trans: "",
+            trans: "Understanding the variability in ocean acidification — the potential for animals and physiological response to adapt or acclimate to ocean acidification — is critical, so that we know whether or not there is going to be large-scale, ecosystem-level effects.<br/>My name is Bob Foy, I work for the National Marine Fisheries Service. I am the director of the Kodiak Laboratory, and the program manager for the shellfish assessment program.<br/>We’re just at the beginning. We are just scratching the surface of our understanding of ocean acidification. There’s various aspects. There’s the physical chemical aspects of ocean acidification. There’s the biological response. There’s the ecosystem response. And right now we are just understanding the chemistry enough to start asking questions about the biology.<br/>The reality is, we need to know much more complex answers. We need to have more answers to questions about cellular response, molecular response, all the way up to ecosystem response. So we’re just at the nascent stages of understanding each of these aspects of ocean acidification. Which is why it’s so critical that we continue to look for funding to continue this, to find support in the public to continue ocean acidification research, and really continue with the baseline research. So that as acidification becomes more of an issue in coastal communities in Alaska and around the world, that we have that baseline in order to understand what the changes are over time.",
             tags: ["What"],
             name: "Dr. Robert Foy"
           }
@@ -76,7 +77,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "ChrisHoldred"
+            name: "Kris Holderied"
           }
         ]
       },
@@ -87,7 +88,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "Clem"
+            name: "Clem Tillion"
           }
         ]
       },
@@ -98,7 +99,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "DanFalvey"
+            name: "Dan Falvey"
           }
         ]
       },
@@ -109,7 +110,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "Dune"
+            name: "Dune Lankard"
           }
         ]
       },
@@ -120,7 +121,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "Frank"
+            name: "Frank Kelty"
           }
         ]
       },
@@ -131,7 +132,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "IslandsInstitute"
+            name: "Islands Institute"
           }
         ]
       },
@@ -153,7 +154,18 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "KimWilliams"
+            name: "Kim Williams"
+          }
+        ]
+      },
+      {
+        sources: [
+          {
+            src: $sce.trustAsResourceUrl("../assets/videos/JeremyMathis.mov"),
+            type: "video/mov",
+            trans: "Ocean acidification is important because it’s a global issue that’s being driven by rising carbon dioxide levels in the atmosphere and it’s the sister problem to climate change. It’s caused by the exact same process — we burn fossil fuels and those fossil fuels emit carbon dioxide that end up in the atmosphere, and a part of them end up in the ocean. And the ones that end up in the ocean fundamentally change the ocean chemistry. And those changes can be harmful to a number of marine organisms.<br/>I’m Dr. Jeremy Mathis, I’m a division director at the Pacific Marine Environmental Laboratory, which is a NOAA facility in Seattle, Washington. I’m also an affiliate faculty member at the University of Alaska Fairbanks and at the University of Washington in Seattle.<br/>So ultimately what’s going to happen is if we continue to burn fossil fuel and we continue to emit carbon dioxide into the atmosphere, we’re going to make the ocean more acidic. It will remain slightly basic, but the reduction in pH and the increase in the acidification factor of the ocean may ultimately harm a number of organisms that we rely on.",
+            tags: ["What"],
+            name: "Dr. Jeremy Mathis"
           }
         ]
       },
@@ -164,7 +176,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "LookCloser"
+            name: "Look Closer"
           }
         ]
       },
@@ -175,7 +187,7 @@
             type: "video/mov",
             trans: "",
             tags: ["What"],
-            name: "Shalin"
+            name: "Dr. Shallin Busch"
           }
         ]
       }

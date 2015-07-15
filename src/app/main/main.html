@@ -14,7 +14,7 @@
   </section>
 
 
-<div layout="row">
+<div layout="row" layout-align="space-around center">
 <div flex="50">
   <div class="videogular-container">
     <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
@@ -42,8 +42,8 @@
 
   <div flex="50">
 <md-card>
-  <h3>Dr. Robert Foy</h3>
-  Understanding the variability in ocean acidification — the potential for animals and physiological response to adapt or acclimate to ocean acidification — is critical, so that we know whether or not there is going to be large-scale, ecosystem-level effects.<br/>My name is Bob Foy, I work for the National Marine Fisheries Service. I am the director of the Kodiak Laboratory, and the program manager for the shellfish assessment program.<br/>We’re just at the beginning. We are just scratching the surface of our understanding of ocean acidification. There’s various aspects. There’s the physical chemical aspects of ocean acidification. There’s the biological response. There’s the ecosystem response. And right now we are just understanding the chemistry enough to start asking questions about the biology.<br/>The reality is, we need to know much more complex answers. We need to have more answers to questions about cellular response, molecular response, all the way up to ecosystem response. So we’re just at the nascent stages of understanding each of these aspects of ocean acidification. Which is why it’s so critical that we continue to look for funding to continue this, to find support in the public to continue ocean acidification research, and really continue with the baseline research. So that as acidification becomes more of an issue in coastal communities in Alaska and around the world, that we have that baseline in order to understand what the changes are over time.
+  <h3> {{main.config.sources[0].name}}</h3>
+   {{main.config.sources[0].trans}}
  </md-card>
   </div>
 
@@ -53,12 +53,12 @@
 
   <div class="playlist">
 
-    {{main.videos}}
+<!--    {{main.videos}}-->
 
     <form class="form-inline">
       <input ng-model="query" type="text" placeholder="Filter by" autofocus>
-
     </form>
+
 
     <ul class="example-animate-container">
 
