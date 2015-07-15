@@ -62,7 +62,7 @@
 
     <ul class="example-animate-container">
 
-      <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 9">
+      <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 15">
 
 
         <li animate="animate-repeat"><a ng-click="main.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
@@ -77,19 +77,6 @@
     </ul>
   </div>
 
-  <div class="techs" layout-align="center">
-    <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a>
-          </p>
-        </div>
-      </div>
-    </md-card>
-  </div>
 
   <md-toolbar class="md-medium-tall">
     <acme-navbar />
