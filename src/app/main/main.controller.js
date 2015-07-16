@@ -197,7 +197,7 @@
 
       subtitle: [{
         kind: "captions",
-        src: $sce.trustAsResourceUrl("assets/subs/pale-blue-dot.vtt"),
+        src: $sce.trustAsResourceUrl("assets/VTT/OceanAcidification  ResearchonTopoftheWorld.vtt"),
         srclang: "en",
         label: "English"
       }]
