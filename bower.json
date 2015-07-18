@@ -25,7 +25,8 @@
     "angularfire": "~1.1.2",
     "angular-google-places-autocomplete": "~0.2.7",
     "angular-messages": "~1.4.2",
-    "angulartics": "~0.19.0"
+    "angulartics": "~0.19.0",
+    "videogular-subtitle-plugin": "https://github.com/farhan-repo/videogular-subtitle-plugin.git"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
