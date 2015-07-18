@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'nexa_rust_extrasfree';
-    src: url('nexarustextras-free-webfont.eot');
-    src: url('nexarustextras-free-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexarustextras-free-webfont.woff2') format('woff2'),
-         url('nexarustextras-free-webfont.woff') format('woff'),
-         url('nexarustextras-free-webfont.ttf') format('truetype'),
-         url('nexarustextras-free-webfont.svg#nexa_rust_extrasfree') format('svg');
+    src: url('fonts/nexarustextras-free-webfont.eot');
+    src: url('fonts/nexarustextras-free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexarustextras-free-webfont.woff2') format('woff2'),
+         url('fonts/nexarustextras-free-webfont.woff') format('woff'),
+         url('fonts/nexarustextras-free-webfont.ttf') format('truetype'),
+         url('fonts/nexarustextras-free-webfont.svg#nexa_rust_extrasfree') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -18,12 +18,12 @@
 
 @font-face {
     font-family: 'nexa_rust_handmadeextended';
-    src: url('nexarusthandmade-extended-webfont.eot');
-    src: url('nexarusthandmade-extended-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexarusthandmade-extended-webfont.woff2') format('woff2'),
-         url('nexarusthandmade-extended-webfont.woff') format('woff'),
-         url('nexarusthandmade-extended-webfont.ttf') format('truetype'),
-         url('nexarusthandmade-extended-webfont.svg#nexa_rust_handmadeextended') format('svg');
+    src: url('fonts/nexarusthandmade-extended-webfont.eot');
+    src: url('fonts/nexarusthandmade-extended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexarusthandmade-extended-webfont.woff2') format('woff2'),
+         url('fonts/nexarusthandmade-extended-webfont.woff') format('woff'),
+         url('fonts/nexarusthandmade-extended-webfont.ttf') format('truetype'),
+         url('fonts/nexarusthandmade-extended-webfont.svg#nexa_rust_handmadeextended') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -34,12 +34,12 @@
 
 @font-face {
     font-family: 'nexa_rust_sansblack';
-    src: url('nexarustsans-black-webfont.eot');
-    src: url('nexarustsans-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexarustsans-black-webfont.woff2') format('woff2'),
-         url('nexarustsans-black-webfont.woff') format('woff'),
-         url('nexarustsans-black-webfont.ttf') format('truetype'),
-         url('nexarustsans-black-webfont.svg#nexa_rust_sansblack') format('svg');
+    src: url('fonts/nexarustsans-black-webfont.eot');
+    src: url('fonts/nexarustsans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexarustsans-black-webfont.woff2') format('woff2'),
+         url('fonts/nexarustsans-black-webfont.woff') format('woff'),
+         url('fonts/nexarustsans-black-webfont.ttf') format('truetype'),
+         url('fonts/nexarustsans-black-webfont.svg#nexa_rust_sansblack') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -50,12 +50,12 @@
 
 @font-face {
     font-family: 'nexa_rust_script_l0regular';
-    src: url('nexarustscriptl-0-webfont.eot');
-    src: url('nexarustscriptl-0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexarustscriptl-0-webfont.woff2') format('woff2'),
-         url('nexarustscriptl-0-webfont.woff') format('woff'),
-         url('nexarustscriptl-0-webfont.ttf') format('truetype'),
-         url('nexarustscriptl-0-webfont.svg#nexa_rust_script_l0regular') format('svg');
+    src: url('fonts/nexarustscriptl-0-webfont.eot');
+    src: url('fonts/nexarustscriptl-0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexarustscriptl-0-webfont.woff2') format('woff2'),
+         url('fonts/nexarustscriptl-0-webfont.woff') format('woff'),
+         url('fonts/nexarustscriptl-0-webfont.ttf') format('truetype'),
+         url('fonts/nexarustscriptl-0-webfont.svg#nexa_rust_script_l0regular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -120,6 +120,7 @@
     font-weight:bold;
     text-decoration:none;
     color: #f6f7f8;
-    font-family: NexaRustSlab;
+    font-family:  nexa_rust_handmadeextended;
+//    font-family: NexaRustSlab;
 
 }
