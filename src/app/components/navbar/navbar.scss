@@ -13,9 +13,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'nexa_rust_handmadeextended';
     src: url('fonts/nexarusthandmade-extended-webfont.eot');
@@ -84,7 +81,8 @@
 
 .navtext {
   color: #38628d;
-  font: 900 50px / 60px NexaRustSans;
+  font: 900 50px / 60px nexa_rust_script_l0regular;
+//  font: 900 50px / 60px NexaRustSans;
 }
 
 .round-button {
