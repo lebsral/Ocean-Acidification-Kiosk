@@ -19,6 +19,12 @@
         templateUrl: 'app/act-now/act-now.html',
         controller: 'actnowCtrl',
         controllerAs: 'actnow'
+      })
+          .state('OAFacts', {
+        url: '/OAFacts',
+        templateUrl: 'app/OAFacts/OAFacts.html',
+        controller: 'OAFactsCtrl',
+        controllerAs: 'OAFacts'
       });
 
     $urlRouterProvider.otherwise('/');
