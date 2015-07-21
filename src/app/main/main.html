@@ -1,10 +1,7 @@
 <md-content>
 
-
-
-
 <div layout="row" layout-align="space-around center">
-<div flex="65">
+<div flex="80">
   <div class="videogular-container">
     <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
       <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
@@ -28,10 +25,13 @@
   </div>
   </div>
 
-  <div flex="34">
+
+  <div flex="20" c>
 <md-card>
+  <div class="sidetext">
   <h3> {{main.config.sources[0].name}}</h3>
   <div ng-bind-html="main.config.sources[0].trans"></div>
+    </div>
  </md-card>
   </div>
 
@@ -39,23 +39,30 @@
   </div>
 
 
+<!--
   <div class="playlist">
 
-<!--
+
     <form class="form-inline">
       <input ng-model="query" type="text" placeholder="Filter by" autofocus>
     </form>
-
-<md-button ng-click="main.setVideo(3)">play</md-button>
 -->
+
+
+
+
+
+
+
+
 <!--
 
 {{ main.config.sources[0].tags[0] }}
 
    {{ main.config.tracks }}
--->
 
-<!--
+
+
     <ul>
 
       <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 2">
@@ -72,12 +79,12 @@
 
     </ul>
 -->
+
   </div>
 
 
-
-  <md-toolbar class="md-medium-tall">
-    <acme-navbar />
-  </md-toolbar>
+  <header>
+    <acme-navbar/>
+  </header>
 
 </md-content>

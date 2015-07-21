@@ -5,10 +5,12 @@
 // bower:scss
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
 
 html {
-  font-family: 'Roboto Slab', serif;
+  height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 [layout=row] {
@@ -47,6 +49,16 @@ section.jumbotron {
   }
 }
 
+.md-title {
+  color: rgb(60, 114, 147);
+}
+
+
+body {
+  min-height: 100vh;
+}
+
+
 .techs {
   display: flex;
   flex-flow: row wrap;
@@ -68,8 +80,7 @@ section.jumbotron {
 // injector
 // endinjector
 
-.md-title {
-  color: rgb(60, 114, 147);
+
+.sidetext {
+  font-size: 8pt;
 }
-
-

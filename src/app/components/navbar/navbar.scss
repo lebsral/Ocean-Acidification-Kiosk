@@ -1,15 +1,14 @@
 
 @font-face {
     font-family: 'nexa_rust_slabblack_shadow_01';
-    src: url('nexarustslab-blackshadow01-webfont.eot');
-    src: url('nexarustslab-blackshadow01-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexarustslab-blackshadow01-webfont.woff2') format('woff2'),
-         url('nexarustslab-blackshadow01-webfont.woff') format('woff'),
-         url('nexarustslab-blackshadow01-webfont.ttf') format('truetype'),
-         url('nexarustslab-blackshadow01-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
+    src: url('fonts/nexarustslab-blackshadow01-webfont.eot');
+    src: url('fonts/nexarustslab-blackshadow01-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexarustslab-blackshadow01-webfont.woff2') format('woff2'),
+         url('fonts/nexarustslab-blackshadow01-webfont.woff') format('woff'),
+         url('fonts/nexarustslab-blackshadow01-webfont.ttf') format('truetype'),
+         url('fonts/nexarustslab-blackshadow01-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -24,11 +23,6 @@
     font-style: normal;
 
 }
-
-.acme-navbar-text{
-  color: green;
-}
-
 
 
 .md-buttonnav {
@@ -58,8 +52,7 @@
 
 .actText {
   color: white;
-  font: 30px nexa_rust_slabblack_shadow_01;
-//  font: 25px nexa_rust_sansblack;
+  font: 36px nexa_rust_slabblack_shadow_01;
   text-align: center;
   vertical-align: center;
 }
@@ -67,12 +60,6 @@
 .round-button {
 	width:200px;
     padding: 10px;
-//   text-align: center;
-//    vertical-align: center;
-//    display: flex;
-//   text-decoration:none;
-//  justify-content: center; /* align horizontal */
-//  align-items: center; /* align vertical */
 }
 .round-button-circle {
 	width: 100%;
@@ -88,21 +75,8 @@
 	background: rgb(255, 155, 5);
 }
 .round-button a {
-//    display:block;
-//	float:left;
-//	width:100%;
-//	padding-top:50%;
-//    padding-bottom:50%;
-//	line-height:1em;
-//	margin-top:4.5em;
-//	text-align:center;
-//    font-size:1.2em;
-//    font-weight:bold;
-//    text-decoration:none;
-//    color: #f6f7f8;
-//    font-family:  nexa_rust_handmadeextended;
-//    font-family: NexaRustSlab;
-
 }
 
-
+.spacer {
+  font-size: 6;
+}

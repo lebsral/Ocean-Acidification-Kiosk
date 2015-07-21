@@ -20,6 +20,12 @@
         controller: 'actnowCtrl',
         controllerAs: 'actnow'
       })
+      .state('LookCloser', {
+        url: '/LookCloser',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
           .state('OAFacts', {
         url: '/OAFacts',
         templateUrl: 'app/OAFacts/OAFacts.html',
