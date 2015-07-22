@@ -7,6 +7,7 @@
       <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
       </vg-media>
 
+<!--
       <vg-controls>
         <vg-play-pause-button></vg-play-pause-button>
 
@@ -17,6 +18,7 @@
 
         <vg-tracks></vg-tracks>
       </vg-controls>
+-->
 
       <vg-overlay-play></vg-overlay-play>
       <vg-buffering></vg-buffering>
@@ -27,6 +29,7 @@
 
 
   <div flex="20" c>
+    <md-button ng-click="main.setVideo(10)">play</md-button>
 <md-card>
   <div class="sidetext">
   <h3> {{main.config.sources[0].name}}</h3>
@@ -35,38 +38,21 @@
  </md-card>
   </div>
 
-
   </div>
 
 
-<!--
   <div class="playlist">
-
-
     <form class="form-inline">
       <input ng-model="query" type="text" placeholder="Filter by" autofocus>
     </form>
--->
 
-
-
-
-
-
-
-
-<!--
 
 {{ main.config.sources[0].tags[0] }}
 
    {{ main.config.tracks }}
 
-
-
     <ul>
-
       <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 2">
-
 
         <li><a ng-click="main.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
         </li>

@@ -204,7 +204,6 @@
 
     };
 
-
     vm.setVideo = function (index) {
       vm.API.stop();
       vm.currentVideo = index;
