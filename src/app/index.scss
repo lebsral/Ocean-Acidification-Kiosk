@@ -6,11 +6,11 @@
 // endbower
 
 //@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
 
 html {
-  height: 100vh;
-  font-family: 'Roboto Condensed', sans-serif;
+//  height: 100vh;
+//  font-family: 'Roboto Condensed', sans-serif;
 }
 
 [layout=row] {
@@ -33,39 +33,33 @@ html {
 }
 
 md-toolbar.md-default-theme {
-  background-color: black;
+
 }
 
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
-}
 
 .md-title {
   color: rgb(60, 114, 147);
 }
 
-
 body {
+//    background-image: url(../assets/images/Water-waves.png);
+//  height: 337px;
+//  width: 1920px;
   min-height: 100vh;
+  height:100%;
+  margin:0;
+  padding:0;
+  margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
-
 
 .techs {
   display: flex;
   flex-flow: row wrap;
-
   md-card {
     width: 30%;
-
     img.pull-right {
       float: right;
       width: 50px;
@@ -84,3 +78,38 @@ body {
 .sidetext {
   font-size: 8pt;
 }
+
+.videolayout {
+  position: left;
+vertical-align: bottom;
+  z-index: 1;
+}
+
+.bgcol {
+  background-color: red;
+}
+
+.container {
+  align-items: center
+}
+
+.silly {
+  padding-bottom: 200px;
+}
+
+.bgwaves {
+//  postion: absolute;
+vertical-align: bottom;
+  z-index: 0;
+}
+
+////.thesolution {
+////  height: 1000px;
+////  width:1920px;
+//}
+
+.thevirtualbox {
+   height: 800px;
+  width:1920px;
+}
+

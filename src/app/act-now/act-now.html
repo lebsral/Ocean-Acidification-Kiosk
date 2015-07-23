@@ -1,46 +1,55 @@
 <md-content>
 
-  <div layout="row" layout-align="space-around center">
-<div flex="65">
-  <form name="userForm">
-    <md-input-container>
-      <input required placeholder="First Name..." ng-model="newFirstName">
-      <br>
+  <div layout="column">
+    <div flex="65">
+    <div layout="row" layout-align="space-around center">
+      <div flex="65">
+        <form name="userForm">
+      <!--
+          <md-input-container>
+            <input required placeholder="First Name..." ng-model="newFirstName">
+            <br>
 
-    </md-input-container>
-    <md-input-container>
-      <input required placeholder="Last Name..." ng-model="newLastName">
-      <br>
-    </md-input-container>
-    <md-input-container>
-      <input g-places-autocomplete options="autocompleteOptions" force-selection="true" placeholder="City, State..." ng-model="newPlace">
-      <br>
-    </md-input-container>
+          </md-input-container>
+          <md-input-container>
+            <input required placeholder="Last Name..." ng-model="newLastName">
+            <br>
+          </md-input-container>
 
-    <md-input-container>
-      <input type="email" required placeholder="Email..." ng-model="newEmail">
-      <br>
-    </md-input-container>
+          <md-input-container>
+            <input g-places-autocomplete options="autocompleteOptions" force-selection="true" placeholder="City, State..." ng-model="newPlace">
+            <br>
+          </md-input-container>
+      -->
 
-    <md-input-container>
-      <md-checkbox ng-model="newOAList" aria-label="on OA info list">More info about OA</md-checkbox>
-    </md-input-container>
-    <md-input-container>
-      <md-checkbox ng-model="newCoalList" aria-label="on Coal list">More info about Coal</md-checkbox>
-    </md-input-container>
-    <md-input-container>
-      <md-checkbox ng-model="newLegList" aria-label="on Legislationlist">More info about Legislation</md-checkbox>
-    </md-input-container>
+        <md-input-container>
+          <input type="email" required placeholder="Email..." ng-model="newEmail">
+          <br>
+        </md-input-container>
 
-    <md-input-container>
-      <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button>
-    </md-input-container>
-  </form>
- </div>
-  </div>
-  </div>
-  <header>
+        <md-input-container>
+          <md-checkbox ng-model="newOAList" aria-label="on OA info list">More info about OA</md-checkbox>
+        </md-input-container>
+        <md-input-container>
+          <md-checkbox ng-model="newCoalList" aria-label="on Coal list">More info about Coal</md-checkbox>
+        </md-input-container>
+        <md-input-container>
+          <md-checkbox ng-model="newLegList" aria-label="on Legislationlist">More info about Legislation</md-checkbox>
+        </md-input-container>
+
+          <md-input-container>
+            <md-button class="md-raised" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">send</md-button>
+      </md-input-container>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div flex="35">
+      <header>
     <acme-navbar/>
   </header>
+    </div>
+    </div>
+
 
 </md-content>
