@@ -28,6 +28,7 @@
 .md-buttonnav {
   width: 270px;
   height: 100px;
+   z-index: 3;
   background-color: #001d4a;
   bottom: 11.5%;
     text-align: center;
@@ -41,7 +42,9 @@
 }
 
 .navwaves {
-  background-color: rgb(60, 114, 147);
+  z-index: 2;
+//  background-color: rgb(60, 114, 147);
+//  opacity: 0.4;
 }
 
 .navtext {

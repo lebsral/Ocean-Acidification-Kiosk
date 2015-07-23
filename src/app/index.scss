@@ -39,6 +39,7 @@ md-toolbar.md-default-theme {
 
 .md-title {
   color: rgb(60, 114, 147);
+  z-index: = 6;
 }
 
 body {
@@ -90,7 +91,8 @@ vertical-align: bottom;
 }
 
 .container {
-  align-items: center
+  align-items: center;
+  z-index: 3
 }
 
 .silly {
@@ -99,8 +101,12 @@ vertical-align: bottom;
 
 .bgwaves {
 //  postion: absolute;
-vertical-align: bottom;
+  position: fixed;
+  bottom: 0;
+//vertical-align: bottom;
   z-index: 0;
+  width:1920px;
+  height: 381px;
 }
 
 ////.thesolution {
@@ -113,3 +119,11 @@ vertical-align: bottom;
   width:1920px;
 }
 
+
+.factslayout {
+  z-index: = 6;
+}
+
+.md-body-1 {
+  z-index: = 6;
+}
