@@ -1,31 +1,31 @@
-
 <md-content>
-<div class="thesolution">
-  <div class="thevirtualbox">
-<div layout="column">
-  <div layout="row" layout-align="space-around center" class="videolayout">
 
-      <div class="videogular-container" >
-        <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
-          <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
-          </vg-media>
 
-          <vg-overlay-play></vg-overlay-play>
-          <vg-buffering></vg-buffering>
-          <vg-poster vg-url='main.config.plugins.poster'></vg-poster>
-        </videogular>
+<div layout="row" layout-align="space-around center">
+  <div flex="100">
+    <div layout="row" class="videolayout">
+
+      <div class="videogular-container">
+          <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
+            <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
+            </vg-media>
+            <vg-overlay-play></vg-overlay-play>
+            <vg-buffering></vg-buffering>
+            <vg-poster vg-url='main.config.plugins.poster'></vg-poster>
+          </videogular>
+        </div>
+
+
       </div>
-
+    </div>
 </div>
 
 
 
-</div>
-</div>
   <header>
     <acme-navbar/>
   </header>
-</div>
+
 </md-content>
 
 
@@ -44,4 +44,3 @@
   </md-card>
 </div>
 -->
-

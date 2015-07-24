@@ -1,36 +1,9 @@
 
-@font-face {
-    font-family: '../../fonts/nexa_rust_slabblack_shadow_01';
-    src: url('../../fonts/nexarustslab-blackshadow01-webfont.eot');
-    src: url('../../fonts/nexarustslab-blackshadow01-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/nexarustslab-blackshadow01-webfont.woff2') format('woff2'),
-         url('../../fonts/nexarustslab-blackshadow01-webfont.woff') format('woff'),
-         url('../../fonts/nexarustslab-blackshadow01-webfont.ttf') format('truetype'),
-         url('../../fonts/nexarustslab-blackshadow01-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '../../fonts/nexa_rust_sansblack';
-    src: url('../../fonts/nexarustsans-black-webfont.eot');
-    src: url('../../fonts/nexarustsans-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/nexarustsans-black-webfont.woff2') format('woff2'),
-         url('../../fonts/nexarustsans-black-webfont.woff') format('woff'),
-         url('../../fonts/nexarustsans-black-webfont.ttf') format('truetype'),
-         url('../../fonts/nexarustsans-black-webfont.svg#nexa_rust_sansblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 .md-buttonnav {
   width: 270px;
   height: 100px;
    z-index: 3;
   background-color: #001d4a;
-  bottom: 11.5%;
     text-align: center;
     padding: 20px;
     margin: 20px;
@@ -43,13 +16,14 @@
 
 .navwaves {
   z-index: 2;
-//  background-color: rgb(60, 114, 147);
-//  opacity: 0.4;
+    position: fixed;
+  bottom: 20px;
+
 }
 
 .navtext {
   color: white;
-  font: 25px nexa_rust_sansblack;
+  font: 25px nexax_rust_sansblack;
 }
 
 
@@ -85,4 +59,11 @@
 
 .spacer {
   font-size: 6;
+}
+
+.logoOnNav {
+  z-index: 3;
+  width: 141px;
+  height: 72px;
+  margin: 20px;
 }
