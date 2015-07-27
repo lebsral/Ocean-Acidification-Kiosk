@@ -34,6 +34,9 @@ html {
 //  height: 100vh;
 
 }
+a:hover {
+    background-color: rgba(1, 164, 163, .3);
+  }
 
 [layout=row] {
   flex-direction: row;
@@ -61,6 +64,7 @@ md-toolbar.md-default-theme {
 
 .md-title {
   color: rgb(60, 114, 147);
+  font-size: 24pt;
 }
 
 body {
@@ -149,4 +153,21 @@ body {
 
 .md-body-1 {
 //  z-index: = 6;
+ font-size: 14pt;
+  line-height: 140%;
+
+}
+
+.ActNowPretty {
+display: flex;
+  position: fixed;
+  top: 50px;
+}
+
+.cardstuff {
+  margin: 20px
+}
+
+.modcard {
+   background-color: rgba(62, 164, 163, .3);
 }

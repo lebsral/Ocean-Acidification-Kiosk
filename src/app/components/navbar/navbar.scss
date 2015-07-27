@@ -2,16 +2,22 @@
 .md-buttonnav {
   width: 270px;
   height: 100px;
-   z-index: 3;
-  background-color: #001d4a;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+  z-index: 3;
+background-color: #001d4a;
+//  transition: box-shadow 10s cubic-bezier(0.25, 0.8, 0.25, 1), background-color (green) cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 0px 3px 5px #000000;
+}
+.md-buttonnav:not([disabled]):hover {
+color: floralwhite;
+ background-color:red;
+//  transition: box-shadow 10s cubic-bezier(0.25, 0.8, 0.25, 1), background-color (green) cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .navwaves {
