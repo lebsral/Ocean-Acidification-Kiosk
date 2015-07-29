@@ -65,6 +65,7 @@ md-toolbar.md-default-theme {
 .md-title {
   color: rgb(60, 114, 147);
   font-size: 24pt;
+
 }
 
 body {
@@ -165,9 +166,40 @@ body {
 }
 
 .cardstuff {
-  margin: 20px
+  margin: 20px;
 }
 
 .modcard {
    background-color: rgba(62, 164, 163, .3);
+}
+
+.actheader {
+  font-size: 36px;
+  color: #001d4a;
+  margin-left: 20px
+
+}
+
+.actcardtitle {
+  margin-left: 20px
+}
+
+
+
+.cardbody {
+  font-size: 18pt;
+  margin-right: 10px
+}
+
+
+
+.orangebutton {
+
+  background-color: #001d4a;
+   border-radius: 10px;
+  box-shadow: 0px 3px 5px #000000;
+}
+
+.sendtext {
+ color: white
 }

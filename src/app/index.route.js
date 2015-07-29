@@ -10,7 +10,7 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/Splash/splash.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
@@ -20,11 +20,17 @@
         controller: 'actnowCtrl',
         controllerAs: 'actnow'
       })
+      .state('whatis', {
+        url: '/whatis',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'whatis'
+      })
       .state('LookCloser', {
         url: '/LookCloser',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
+        controllerAs: 'lookcloser'
       })
           .state('OAFacts', {
         url: '/OAFacts',
