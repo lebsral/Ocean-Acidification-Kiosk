@@ -28,3 +28,17 @@ Right click and change the target of the poperty to (with the quotes)
 6. Now just open http://localhost:8080/ in your browser.
 7. To make this the permanent opening page on chrome - Settings -> On Startup Open a specific page or set of pages -> Set Pages -> http://localhost:8080/whatever/#/
 
+
+
+To stop right clicking on the kiosk put this code between and including the script tags in the header of the index.html
+
+<pre><code>
+
+    <script>
+      window.oncontextmenu = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    </script>
+    
+</code></pre>
