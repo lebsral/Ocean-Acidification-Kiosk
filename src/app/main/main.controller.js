@@ -185,7 +185,7 @@
     vm.config = {
       preload: "none",
       autoHide: false,
-      autoHideTime: 300000,
+      autoHideTime: 3000,
       autoPlay: true,
       sources: vm.videos[0].sources,
       theme: {
