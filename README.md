@@ -12,12 +12,13 @@ C:\Users\PCA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
 Right click and change the target of the poperty to (with the quotes)
 
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -kiosk C:\Users\PCA\Desktop\shared-folder\dist\index.html
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -kiosk C:\Users\PCA\Desktop\shared-folder\dist\index.html"
+
+or if you want it be be from a local webserver leave off the last part after -kiosk and then build a webserver below
 
 
 
 # One way make a web server on a windows machine
-
 
 
 1. First you must install [NodeJS](http://nodejs.org/).
