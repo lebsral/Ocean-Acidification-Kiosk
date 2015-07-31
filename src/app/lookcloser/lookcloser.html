@@ -3,8 +3,8 @@
   <div layout="row" layout-align="space-around center">
     <div flex="80">
       <div class="videogular-container">
-        <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
-          <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
+        <videogular vg-player-ready="lookcloser.onPlayerReady($API)" vg-complete="lookcloser.onCompleteVideo()" vg-theme="lookcloser.config.theme.url">
+          <vg-media vg-src="lookcloser.config.sources" vg-tracks="lookcloser.config.tracks">
           </vg-media>
 
           <!--      <vg-controls>-->
@@ -28,27 +28,7 @@
 
     </div>
 
-        <div flex="10">
-    <a ng-click="main.setVideo(0)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
-    {{ main.config.sources[0].tags[0] }}
 
-
-main.setVideo($index)
-
-  {{ main.config.sources[3].name }} {{ main.sources[3].name[0] }}
-
-
-    <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 20">
-
-
-            <li animate="animate-repeat" ><a ng-click="main.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}} {{$index}}</a>
-            </li>
-
-            </div>
-
-
-
-  </div>
 
 
     </div>

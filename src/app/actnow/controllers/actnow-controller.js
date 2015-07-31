@@ -33,8 +33,6 @@ angular.module('acidification')
 
   var newMessageRef = ref.push();
 
-
-
     // provide a method for adding an email
     $scope.addEmail = function (newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList) {
       if (newEmail) {
