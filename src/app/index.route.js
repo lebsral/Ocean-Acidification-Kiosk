@@ -22,17 +22,23 @@
       })
       .state('whatis', {
         url: '/whatis',
+        templateUrl: 'app/whatis/whatis.html',
+        controller: 'WhatIsController',
+        controllerAs: 'whatis'
+      })
+      .state('lookcloser', {
+        url: '/lookcloser',
+        templateUrl: 'app/lookcloser/lookcloser.html',
+        controller: 'LookCloserController',
+        controllerAs: 'lookcloser'
+      })
+      .state('voices', {
+        url: '/voices',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .state('LookCloser', {
-        url: '/LookCloser',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      })
-          .state('OAFacts', {
+      .state('OAFacts', {
         url: '/OAFacts',
         templateUrl: 'app/OAFacts/OAFacts.html',
         controller: 'OAFactsCtrl',

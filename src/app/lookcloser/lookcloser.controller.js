@@ -3,10 +3,10 @@
 
   angular
     .module('acidification')
-    .controller('MainController', MainController);
+    .controller('LookCloserController', LookCloserController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, $sce, $location) {
+  function LookCloserController($timeout, webDevTec, toastr, $sce, $location) {
     var vm = this;
 
     vm.state = null;
@@ -187,8 +187,8 @@
       autoPlay: true,
       sources: vm.videos[0].sources,
       theme: {
-        //        url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
-        url: $sce.trustAsResourceUrl("main/videogular.css")
+                url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
+//        url: $sce.trustAsResourceUrl("main/videogular.css")
       },
       plugins: {
         poster: "assets/images/logo.png"

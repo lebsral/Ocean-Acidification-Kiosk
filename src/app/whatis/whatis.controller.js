@@ -3,10 +3,10 @@
 
   angular
     .module('acidification')
-    .controller('MainController', MainController);
+    .controller('WhatIsController', WhatIsController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, $sce, $location) {
+  function WhatIsController($timeout, webDevTec, toastr, $sce, $location) {
     var vm = this;
 
     vm.state = null;
