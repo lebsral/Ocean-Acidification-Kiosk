@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, $sce) {
+  function MainController($timeout, webDevTec, toastr, $sce, $location) {
     var vm = this;
 
     vm.awesomeThings = [];
@@ -24,12 +24,15 @@
     };
 
     vm.onCompleteVideo = function () {
-      console.log("on complete 1");
+      console.log("on complete 1" + vm.currentVideo);
       vm.isCompleted = true;
 
       vm.currentVideo++;
 
-      if (vm.currentVideo >= vm.videos.length) vm.currentVideo = 0;
+      if (vm.currentVideo >= vm.videos.length) {
+        vm.currentVideo = 0;
+        $location.path("/act-now");
+      }
 
       vm.setVideo(vm.currentVideo);
 
@@ -43,7 +46,7 @@
             src: $sce.trustAsResourceUrl("assets/videos/AlexusKwachka.mp4"),
             type: "video/mp4",
             trans: "I think ocean acidification is going to be key, and it’s affecting the colder regions at a more rapid rate than they thought.<br/>It’s going to have a huge detrimental impact. You know some of the things I thought about with ocean acidification was oh yeah, well we’re not going to have as many you know crab or corals or whatever, but I never put it down on the plankton level. And when you put it down to the plankton level that becomes a pretty scary, scary reality.",
-            tags: ["What"],
+            tags: ["ssss"],
             name: "Alexus Kwachka"
           }
         ]
@@ -185,23 +188,15 @@
     vm.config = {
       preload: "none",
       autoHide: false,
-      autoHideTime: 3000,
+      autoHideTime: 300,
       autoPlay: true,
       sources: vm.videos[0].sources,
       theme: {
         url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
       },
       plugins: {
-        poster: "/assets/images/logo.png"
-      },
-
-      subtitle: [{
-        kind: "captions",
-        src: $sce.trustAsResourceUrl("assets/VTT/OceanAcidification  ResearchonTopoftheWorld.vtt"),
-        srclang: "en",
-        label: "English"
-      }]
-
+        poster: "assets/images/logo.png"
+      }
     };
 
     vm.setVideo = function (index) {

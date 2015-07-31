@@ -1,24 +1,57 @@
 <md-content>
 
 
+
+
 <div layout="row" layout-align="space-around center">
-  <div flex="100">
-    <div layout="row" class="videolayout">
+<div flex="80">
+  <div class="videogular-container">
+    <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
+      <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
+      </vg-media>
 
-      <div class="videogular-container">
-          <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
-            <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
-            </vg-media>
-            <vg-overlay-play></vg-overlay-play>
-            <vg-buffering></vg-buffering>
-<!--            <vg-poster vg-url='main.config.plugins.poster'></vg-poster>-->
-          </videogular>
-        </div>
+<!--      <vg-controls>-->
+<!--        <vg-play-pause-button></vg-play-pause-button>-->
+
+<!--
+        <vg-scrub-bar>
+          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        </vg-scrub-bar>
+
+        <vg-fullscreen-button></vg-fullscreen-button>
+-->
+<!--        <vg-tracks></vg-tracks>-->
+<!--      </vg-controls>-->
+
+<!--      <vg-overlay-play></vg-overlay-play>-->
+      <vg-buffering></vg-buffering>
+<!--      <vg-poster vg-url='main.config.plugins.poster'></vg-poster>-->
+    </videogular>
+  </div>
+  </div>
+
+  <div flex="20">
+    <a ng-click="main.setVideo(0)">{{vid.sources[0].tags}} {{vid.sources[0].name}}</a>
+    {{ main.config.sources[0].tags[0] }}
 
 
-      </div>
-    </div>
-</div>
+main.setVideo($index)
+
+  {{ main.config.sources[3].name }} {{ main.sources[3].name[0] }}
+
+
+    <div ng-repeat="vid in main.videos | filter:query as results" ng-if="$index < 20">
+
+
+            <li animate="animate-repeat" ><a ng-click="main.setVideo($index)">{{vid.sources[0].tags}} {{vid.sources[0].name}} {{$index}}</a>
+            </li>
+
+            </div>
+
+
+
+  </div>
+  </div>
 
 
 
