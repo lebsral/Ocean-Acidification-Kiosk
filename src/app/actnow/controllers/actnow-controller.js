@@ -7,7 +7,11 @@
  * Controller of the acidification
  */
 angular.module('acidification')
-  .controller('actnowCtrl', function ($scope, $firebaseArray) {
+  .controller('actnowCtrl', function ($scope, $firebaseArray, $location, $mdToast) {
+
+
+
+$mdToast.showSimple('Thanks for helping out.  We will contact you.');
 
     $scope.newPlace = null;
     $scope.autocompleteOptions = {
@@ -34,6 +38,9 @@ angular.module('acidification')
           coalList: newCoalList,
           LegList: newLegList
         });
+        main.showToastr();
+
+//        $location.path("/");
       }
     };
   });
