@@ -10,8 +10,15 @@ angular.module('acidification')
   .controller('actnowCtrl', function ($scope, $firebaseArray, $location, $mdToast) {
 
 
+  var displayToast = function(type, msg) {
 
-$mdToast.showSimple('Thanks for helping out.  We will contact you.');
+    $mdToast.show({
+        template: '<md-toast class="md-toast ' + type +'"><h2>' + msg + '</h2></md-toast>',
+        hideDelay: 15000,
+        position: 'top'
+    });
+};
+
 
     $scope.newPlace = null;
     $scope.autocompleteOptions = {
@@ -38,9 +45,9 @@ $mdToast.showSimple('Thanks for helping out.  We will contact you.');
           coalList: newCoalList,
           LegList: newLegList
         });
-        main.showToastr();
+       displayToast('success', 'Thanks for helping out.  We will contact you.');
 
-//        $location.path("/");
+        $location.path("/");
       }
     };
   });

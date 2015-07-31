@@ -206,3 +206,12 @@ body {
 .videogular-container {
   padding-top: 20px;
 }
+
+
+.md-toast.error {
+    background-color: red;
+}
+
+.md-toast.success {
+    background-color: green;
+}
