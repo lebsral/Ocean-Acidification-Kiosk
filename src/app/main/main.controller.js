@@ -21,7 +21,9 @@
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
+      vm.setVideo(0); //this autostarts the video
     };
+
 
     vm.onCompleteVideo = function () {
       console.log("on complete 1" + vm.currentVideo);
@@ -207,14 +209,19 @@
       $timeout(vm.API.play.bind(vm.API), 100);
     };
 
+
     activate();
 
+
     function activate() {
+
       getWebDevTec();
       $timeout(function () {
         vm.classAnimation = 'rubberBand';
       }, 4000);
     }
+
+
 
     function showToastr() {
       toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
