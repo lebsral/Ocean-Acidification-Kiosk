@@ -148,33 +148,11 @@
       {
         sources: [
           {
-            src: $sce.trustAsResourceUrl("assets/videos/LookCloser.mp4"),
-            type: "video/mp4",
-            trans: "Oceans are acidifying at a rate that is 10-100 times faster than any such shift in the past 50 million years.<br/>Acidification causes a number of changes in ocean chemistry that affect marine life – like the healthy pteropod you see in this video. We know that acidification will make it harder for marine organisms like this to produce and maintain the shells and skeletons they make from calcium carbonate building blocks.<br/>In this video we see an unhealthy pteropod struggling with the effects of a more acidic environment.<br/>Pteropods are particularly sensitive to acidification, which can cause decreased survival, growth rates, and reproduction. Along with other calcifying species, these lentil-sized creatures are also vital food sources for salmon, whales and birds. They are an essential piece of the ocean food web.<br/>An increase in acidity has many ecosystem wide impacts, including the dissolving pteropod shells you see here. Pteropods struggle both to build and to maintain healthy shells under the stress of a more acidic ocean environment. Shells can become thin and pock marked.<br/>Crab, oysters and other shellfish are also sensitive to changes in ocean  acidity, or pH. Here you see tanner crab embryos, just beginning their delicate journey toward becoming a mature crab.<br/>Crab embryos, and larvae like these, have shown decreased survival rates during lab studies when acidity increases.  Dr. Robert Foy with NOAA Fisheries Kodiak has studied this common Pacific species during developmental stages. Foy and his staff observed increased crab mortality when the pH was lowered. (Lower numbers mean higher acidity.)<br/>Global ocean pH has decreased by about .1 since the industrial revolution, equating to about a 30 percent rise in acidity. In some areas, however, like the North Pacific, the shift is happening more rapidly.<br/>Because the marine ecosystem is so thoroughly connected, shifts that impact one part of the food web create chain reactions and can cause community-wide impacts, ultimately impacting human communities on land. Ocean acidification has the potential to majorly affect the ecology of the ocean and human communities who rely on it for livelihood, sustenance and culture.<br/>We know it takes awareness and action to continue to be good stewards of our rich ocean ecosystems.<br/>A growing dialogue around the progression and impacts of acidification, as well as ways to reduce and adapt to its causes and effects, can help us do that.",
-            tags: ["What"],
-            name: "Look Closer"
-          }
-        ]
-      },
-      {
-        sources: [
-          {
             src: $sce.trustAsResourceUrl("assets/videos/Shalin.mp4"),
             type: "video/mp4",
             trans: "Ocean chemistry is changing at one of the fastest rates ever in Earth’s history. And we know that marine species can live in a variety of chemistry environments, but we know that marine ecosystems and the species that comprise them respond to change. And in periods in Earth’s history where we’ve seen a big drop in pH, an acidification event, there have been turnover of marine ecosystems, marine species. And they’ve changed.<br/>My name is Shallin Busch, and I’m a scientist for NOAA, which is the National Oceanic and Atmospheric Administration.<br/>So the impacts of ocean acidification on marine ecosystems can happen in a variety of ways. And what’s interesting to think about is that for ecosystems to change not all species inside of the ecosystem need to be sensitive directly to changes in carbon chemistry.<br/>What we’re concerned about is charismatic species, that get a lot of attention by society and people really care about — like birds and whales and big fish like salmon — might be affected by ocean acidification because of the impacts on the prey.",
             tags: ["What"],
             name: "Dr. Shallin Busch"
-          }
-        ]
-      },
-      {
-        sources: [
-          {
-            src: $sce.trustAsResourceUrl("assets/videos/IslandsInstitute.mp4"),
-            type: "video/mp4",
-            trans: "The climate is changing, we’ve got ocean acidification going on, we know that, we can measure it.<br/>Ocean acidification is the great unknown. And it’s affecting the colder regions at a more rapid rate than they thought.<br/>The increased carbon dioxide and the decreasing pH can have a major negative impact on the ability of the embryos, larvae and juveniles to survive.<br/>A form of air pollution known as carbon dioxide is increasing in the atmosphere. The ocean absorbs about a quarter of the CO2 from the atmosphere, and the more we produce, the more the ocean absorbs.<br/>The carbon dioxide absorbed by the ocean is changing the chemistry of the seawater. The CO2 interacts with water and forms carbonic acid. This reaction decreases the availability of carbonate ions. These are the critical building blocks for building shells and skeletons of many marine organisms.<br/>It increases the number of hydrogen ions, which leads to lower pH and greater acidity. Toxic chemicals from storm water, runoff and industrial pollution that flow into the ocean can also contribute to acidification of coastal waters.<br/>You should think of acidification, or the decrease in pH, or increasing carbon dioxide, as another stressor in the environment of an organism. And what we’re finding is that some species handle that stressor differently than others.",
-            tags: ["What"],
-            name: "What is Ocean Acidification?"
           }
         ]
       }
