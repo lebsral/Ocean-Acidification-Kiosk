@@ -7,7 +7,7 @@ background-color: #001d4a;
 //  transition: box-shadow 10s cubic-bezier(0.25, 0.8, 0.25, 1), background-color (green) cubic-bezier(0.25, 0.8, 0.25, 1);
   text-align: center;
   padding: 20px;
-  margin: 20px;
+  margin: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,9 +22,9 @@ color: floralwhite;
 
 .navwaves {
   z-index: 2;
-    position: fixed;
+  position: fixed;
   bottom: 20px;
-
+  width: 100%;
 }
 
 .navtext {
@@ -35,7 +35,7 @@ color: floralwhite;
 
 .actText {
   color: white;
-  font: 47px nexa_rust_slabblack_shadow_01;
+  font: 47px nexa_rust_sansblack;
   text-align: center;
   vertical-align: center;
   padding-top: 32px;
@@ -44,7 +44,7 @@ color: floralwhite;
 
 .round-button {
 	width:200px;
-    padding: 10px;
+  margin: 5px;
 }
 .round-button-circle {
 	width: 100%;
@@ -53,8 +53,10 @@ color: floralwhite;
     border-radius: 50%;
     overflow:hidden;
     background: rgb(255, 155, 5);
-   background-image: radial-gradient(circle, rgb(255, 100, 5), rgb(255, 155, 5));
+   background-image: radial-gradient(circle, rgb(255, 155, 5), rgb(255, 155, 5));
    box-shadow: 0px 3px 7px chocolate;
+//    border: 10px; //why no worky?
+//  border-color: white
 }
 
 .round-button-circle:hover {

@@ -25,7 +25,8 @@ or if you want it be be from a local webserver leave off the last part after -ki
 2. Open the command prompt to run following commands.
 3. Windows 7: Open Start and write cmd into the search and press enter.
 4. Run this command to install a HTTP server: npm install http-server -g
-5. Start the HTTP server: http-server /path/to/docroot with a path to the folder you want to share. Your folder must have some files before it works.
+5. Start the HTTP server: http-server /path/to/docroot with a path to the folder you want to share. Your folder must have some files before it works. maybe this is the path C:\Users\PCA\Desktop\shared\folder\dist
+
 6. Now just open http://localhost:8080/ in your browser.
 7. To make this the permanent opening page on chrome - Settings -> On Startup Open a specific page or set of pages -> Set Pages -> http://localhost:8080/whatever/#/
 
@@ -40,6 +41,7 @@ To stop right clicking on the kiosk put this code between and including the scri
         event.preventDefault();
         event.stopPropagation();
         return false;
+        };
     </script>
     
 </code></pre>

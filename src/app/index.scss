@@ -114,7 +114,7 @@ body {
 }
 
 .bgcol {
-  background-color: red;
+//  background-color: red;
 }
 
 .container {
@@ -204,14 +204,25 @@ body {
 }
 
 .videogular-container {
-  padding-top: 20px;
+
 }
 
 
 .md-toast.error {
-    background-color: red;
+//    background-color: red;
 }
 
 .md-toast.success {
-    background-color: green;
+    background-color: rgb(255, 155, 5);
+}
+
+.navwavesbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logos {
+  width: 100%;
+  justify-content: space-around;
 }
