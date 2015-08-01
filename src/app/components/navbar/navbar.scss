@@ -15,9 +15,7 @@ background-color: #001d4a;
   box-shadow: 0px 3px 5px #000000;
 }
 .md-buttonnav:not([disabled]):hover {
-color: floralwhite;
  background-color:red;
-//  transition: box-shadow 10s cubic-bezier(0.25, 0.8, 0.25, 1), background-color (green) cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .navwaves {
@@ -61,12 +59,6 @@ color: floralwhite;
 
 .round-button-circle:hover {
 	background: rgb(255, 155, 5);
-}
-.round-button a {
-}
-
-.spacer {
-  font-size: 6;
 }
 
 .logoOnNav {

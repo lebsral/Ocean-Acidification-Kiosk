@@ -31,16 +31,8 @@
 }
 
 html {
-//  height: 100vh;
-
 }
-a:hover {
-    background-color: rgba(1, 164, 163, .3);
-  }
 
-[layout=row] {
-  flex-direction: row;
-}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -104,17 +96,9 @@ body {
 }
 
 .videolayout {
-//position: center;
-//vertical-align: bottom;
   z-index: 1;
   position: fixed;
   bottom: 282px;
-//  justify-content: center;
-
-}
-
-.bgcol {
-//  background-color: red;
 }
 
 .container {
@@ -135,15 +119,9 @@ body {
   height: 337px;
 }
 
-////.thesolution {
-////  height: 1000px;
-////  width:1920px;
-//}
-
 .thevirtualbox {
    height: 800px;
   width:1920px;
-
 
 }
 
@@ -184,13 +162,10 @@ body {
 }
 
 
-
 .cardbody {
   font-size: 18pt;
   margin-right: 10px
 }
-
-
 
 .orangebutton {
 
@@ -204,12 +179,6 @@ body {
 }
 
 .videogular-container {
-
-}
-
-
-.md-toast.error {
-//    background-color: red;
 }
 
 .md-toast.success {
