@@ -7,7 +7,7 @@
  * Controller of the acidification
  */
 angular.module('acidification')
-  .controller('actnowCtrl', function ($scope, $firebaseArray, $location, $mdToast) {
+  .controller('actnowCtrl', function ($scope, $firebaseArray, $location, $mdToast, $timeout) {
 
 
   var displayToast = function(type, msg) {
@@ -32,6 +32,20 @@ angular.module('acidification')
     var ref = new Firebase('https://oceanacidification.firebaseio.com/');
 
   var newMessageRef = ref.push();
+
+
+     $timeout(function() {
+      $location.path("/");
+      }, 300000);
+
+
+  function focus(){
+  return {
+    link: function(scope, element) {
+      element[0].focus();
+    }
+  };
+}
 
     // provide a method for adding an email
     $scope.addEmail = function (newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList) {
