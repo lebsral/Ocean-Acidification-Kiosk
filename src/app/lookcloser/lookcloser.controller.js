@@ -55,8 +55,7 @@
       autoPlay: true,
       sources: vm.videos[0].sources,
       theme: {
-                url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
-//        url: $sce.trustAsResourceUrl("main/videogular.css")
+           url: $sce.trustAsResourceUrl("videogular.css")
       },
       plugins: {
         poster: "assets/images/logo.png"

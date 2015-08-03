@@ -17,19 +17,20 @@ Join our mailing list to learn how you can help.
             <br>
           </md-input-container>
           <md-input-container>
-            <input g-places-autocomplete options="autocompleteOptions" force-selection="true" placeholder="City, State..." ng-model="newPlace">
+            <input placeholder="City, State..." ng-model="newPlace">
             <br>
           </md-input-container>
           <md-input-container>
             <input type="email" required placeholder="Email..." ng-model="newEmail">
             <br>
-          </md-input-container>
+          </md-input-container><h3>
+          <div class="emaillistheader">Send me more information about:</div></h3>
           <div layout="column" class="logos">
             <div layout="row">
 
-              <div>Send me more information about:</div>
+
               <div>
-                <md-input-container class="md-icon">
+                <md-input-container>
                   <md-checkbox ng-model="newOAList" aria-label="on OA info list">Ocean Acidification</md-checkbox>
                 </md-input-container>
               </div>
@@ -47,8 +48,8 @@ Join our mailing list to learn how you can help.
 
             <div>
               <md-input-container>
-                <md-button class="md-buttonSend" class="actionSubmitButton" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">
-                  <div class="navtext">Send</div>
+                <md-button class="md-buttonSend" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">
+                 <h3> <div class="textsend">Send</div></h3>
                 </md-button>
               </md-input-container>
             </div>
