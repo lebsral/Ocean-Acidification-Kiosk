@@ -3,6 +3,9 @@
 To set up Chrome in Kiosk mode on a Windows 7 machine...
 =========================================================
 
+This was designed to work on a MDKS kiosk only.  It is not a general purpose website.  In adition to the source code provided above you will need to install a server below.
+
+
 make a shortcut of chrome from
 C:\Program Files (x86)\Google\Chrome\Application
 
@@ -25,7 +28,8 @@ or if you want it be be from a local webserver leave off the last part after -ki
 2. Open the command prompt to run following commands.
 3. Windows 7: Open Start and write cmd into the search and press enter.
 4. Run this command to install a HTTP server: npm install http-server -g
-5. Start the HTTP server: http-server /path/to/docroot with a path to the folder you want to share. Your folder must have some files before it works. maybe this is the path C:\Users\PCA\Desktop\shared\folder\dist
+5. Start the HTTP server: http-server /path/to/docroot with a path to the folder you want to share. Your folder must have some files before it works. maybe this is the path 
+http-server C:\Users\PCA\Desktop\shared-folder\dist
 
 6. Now just open http://localhost:8080/ in your browser.
 7. To make this the permanent opening page on chrome - Settings -> On Startup Open a specific page or set of pages -> Set Pages -> http://localhost:8080/whatever/#/
@@ -33,6 +37,12 @@ or if you want it be be from a local webserver leave off the last part after -ki
 
 
 To stop right clicking on the kiosk put this code between and including the script tags in the header of the index.html
+
+npm install winswer
+
+
+
+
 
 <pre><code>
 
