@@ -6,7 +6,7 @@
     .controller('WhatIsController', WhatIsController);
 
   /** @ngInject */
-  function WhatIsController($timeout, webDevTec, toastr, $sce, $location) {
+  function WhatIsController($timeout, $sce, $location) {
     var vm = this;
 
     vm.state = null;

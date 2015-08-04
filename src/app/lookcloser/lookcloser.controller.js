@@ -6,7 +6,7 @@
     .controller('LookCloserController', LookCloserController);
 
   /** @ngInject */
-  function LookCloserController($timeout, webDevTec, toastr, $sce, $location) {
+  function LookCloserController($timeout, $sce, $location) {
     var vm = this;
 
     vm.state = null;

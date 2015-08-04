@@ -2,27 +2,14 @@
 
   <div layout="row" layout-align="space-around center">
     <div flex="80">
-      <div class="videogular-container">
+      <div>
         <videogular vg-player-ready="lookcloser.onPlayerReady($API)" vg-complete="lookcloser.onCompleteVideo()" vg-theme="lookcloser.config.theme.url">
           <vg-media vg-src="lookcloser.config.sources" vg-tracks="lookcloser.config.tracks">
           </vg-media>
 
-          <!--      <vg-controls>-->
-          <!--        <vg-play-pause-button></vg-play-pause-button>-->
 
-          <!--
-        <vg-scrub-bar>
-          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-        </vg-scrub-bar>
-
-        <vg-fullscreen-button></vg-fullscreen-button>
--->
-          <!--        <vg-tracks></vg-tracks>-->
-          <!--      </vg-controls>-->
-
-          <!--      <vg-overlay-play></vg-overlay-play>-->
           <vg-buffering></vg-buffering>
-          <!--      <vg-poster vg-url='main.config.plugins.poster'></vg-poster>-->
+
         </videogular>
       </div>
 

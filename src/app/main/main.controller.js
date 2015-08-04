@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, $sce, $location) {
+  function MainController($timeout, $sce, $location) {
     var vm = this;
 
     vm.state = null;
@@ -16,7 +16,7 @@
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
-      vm.setVideo(0); //this autostarts the video
+      vm.setVideo(0); //this autostarts the video(s) from the first one
     };
 
     vm.onCompleteVideo = function () {
@@ -165,7 +165,6 @@
       autoPlay: true,
       sources: vm.videos[0].sources,
       theme: {
-        //        url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
         url: $sce.trustAsResourceUrl("videogular.css")
       },
       plugins: {

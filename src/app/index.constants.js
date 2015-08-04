@@ -1,11 +1,8 @@
-/* global malarkey:false, toastr:false, moment:false */
+/* global */
 (function() {
   'use strict';
 
   angular
-    .module('acidification')
-    .constant('malarkey', malarkey)
-    .constant('toastr', toastr)
-    .constant('moment', moment);
+    .module('acidification');
 
 })();

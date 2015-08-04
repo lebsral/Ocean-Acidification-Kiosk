@@ -1,5 +1,5 @@
 <md-content>
-  <div class="factslayout">
+  <div>
     <div layout="row" class="ActNowPretty" layout-align="space-around center">
       <div flex="60">
         <div class="actheader">
@@ -23,7 +23,8 @@ Join our mailing list to learn how you can help.
           <md-input-container>
             <input type="email" required placeholder="Email..." ng-model="newEmail">
             <br>
-          </md-input-container><h3>
+          </md-input-container>
+          <h3>
           <div class="emaillistheader">Send me more information about:</div></h3>
           <div layout="column" class="logos">
             <div layout="row">
@@ -49,7 +50,7 @@ Join our mailing list to learn how you can help.
             <div>
               <md-input-container>
                 <md-button class="md-buttonSend" type="submit" ng-click="addEmail(newEmail, newFirstName, newLastName, newPlace, newOAList, newCoalList, newLegList);newEmail = null; newFirstName = null;newLastName = null; newPlace = null; newOAList = true; newCoalList = false; newLegList = false">
-                 <h3> <div class="textsend">Send</div></h3>
+                  <h3> <div class="textsend">Send</div></h3>
                 </md-button>
               </md-input-container>
             </div>
