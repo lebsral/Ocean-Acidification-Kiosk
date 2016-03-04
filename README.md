@@ -13,9 +13,12 @@ and put it here
 
 C:\Users\PCA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
+
+add last flag to the shorcut to prevent bad restarts from offering a restore
+
 Right click and change the target of the poperty to (with the quotes)
 
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -kiosk C:\Users\PCA\Desktop\shared-folder\dist\index.html"
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -kiosk --restore-last-session C:\Users\PCA\Desktop\shared-folder\dist\index.html"
 
 or if you want it be be from a local webserver leave off the last part after -kiosk and then build a webserver below
 
@@ -34,13 +37,11 @@ http-server C:\Users\PCA\Desktop\shared-folder\dist
 6. Now just open http://localhost:8080/ in your browser.
 7. To make this the permanent opening page on chrome - Settings -> On Startup Open a specific page or set of pages -> Set Pages -> http://localhost:8080/whatever/#/
 
-
-
-To stop right clicking on the kiosk put this code between and including the script tags in the header of the index.html
-
+you might want to make it a service with something like
 npm install winswer
 
 
+To stop right clicking on the kiosk put this code between and including the script tags in the header of the index.html
 
 
 
