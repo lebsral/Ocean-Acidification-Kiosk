@@ -16,7 +16,11 @@
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
-      vm.setVideo(0); //this autostarts the video
+      console.log(vm.currentVideo);
+//      vm.toggleFullScreen();
+//      vm.setVideo(3); //this autostarts the video
+
+      console.log('after 0');
     };
 
     vm.onCompleteVideo = function () {
