@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, toastr, $sce, $location) {
+  function MainController($timeout, $sce, $location) {
     var vm = this;
 
     vm.state = null;
@@ -16,27 +16,13 @@
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
-
-//      API.isReady && API.currentState == 'play'
-      console.log(vm.currentVideo);
-//      vm.toggleFullScreen();
-//      vm.setVideo(3); //this autostarts the video
-
-      console.log('after 0');
     };
+
 
     vm.onCompleteVideo = function () {
       console.log("on complete 1" + vm.currentVideo);
+      console.log("thing 3" + vm.API.currentState);
       vm.isCompleted = true;
-
-//      vm.currentVideo++;
-
-//      if (vm.currentVideo >= vm.videos.length) {
-//        vm.currentVideo = 0;
-//        $location.path("/act-now");
-//      }
-
-//      vm.setVideo(vm.currentVideo);
 
     };
 
