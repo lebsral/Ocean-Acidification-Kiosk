@@ -66,3 +66,31 @@ background-color: #001d4a;
   height: 72px;
   margin: 20px;
 }
+
+.md-buttonnav-small {
+    width: 10px;
+  height: 100px;
+  z-index: 3;
+background-color: #001d4a;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #000000;
+}
+
+.clicker {
+  z-index: 4;
+background-color: #001d4a;
+  text-align: center;
+  padding: 20px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #000000;
+}
