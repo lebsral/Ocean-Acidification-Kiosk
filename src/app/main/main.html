@@ -7,8 +7,8 @@
           <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
           </vg-media>
 
-          <vg-controls>
-<!--            <vg-play-pause-button></vg-play-pause-button>-->
+          <vg-controls class="ontopofvid">
+            <vg-play-pause-button></vg-play-pause-button>
 
 
             <vg-scrub-bar>
@@ -32,9 +32,8 @@
 
 
           <div ng-repeat="video in main.videos">
-        <md-button class="md-buttonnav">
-
-          <a ng-click="main.setVideo({{ $index }})">{{video.sources[0].name}}</a>
+        <md-button class="md-buttonnav" ng-click="main.setVideo({{ $index }})">
+          <div class="navtext"> {{video.sources[0].name}} </div>
         </md-button>
       </div>
 
