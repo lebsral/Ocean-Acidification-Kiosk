@@ -16,6 +16,8 @@
 
     vm.onPlayerReady = function (API) {
       vm.API = API;
+
+//      API.isReady && API.currentState == 'play'
       console.log(vm.currentVideo);
 //      vm.toggleFullScreen();
 //      vm.setVideo(3); //this autostarts the video
@@ -27,14 +29,14 @@
       console.log("on complete 1" + vm.currentVideo);
       vm.isCompleted = true;
 
-      vm.currentVideo++;
+//      vm.currentVideo++;
 
-      if (vm.currentVideo >= vm.videos.length) {
-        vm.currentVideo = 0;
-        $location.path("/act-now");
-      }
+//      if (vm.currentVideo >= vm.videos.length) {
+//        vm.currentVideo = 0;
+//        $location.path("/act-now");
+//      }
 
-      vm.setVideo(vm.currentVideo);
+//      vm.setVideo(vm.currentVideo);
 
     };
 
