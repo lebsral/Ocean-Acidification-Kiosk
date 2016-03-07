@@ -20,10 +20,7 @@
 
 
     vm.onCompleteVideo = function () {
-      console.log("on complete 1" + vm.currentVideo);
-      console.log("thing 3" + vm.API.currentState);
       vm.isCompleted = true;
-
     };
 
     vm.videos = [

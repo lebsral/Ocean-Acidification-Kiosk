@@ -172,6 +172,13 @@ body {
 }
 
 .videogular-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .md-toast.success {
@@ -218,4 +225,14 @@ body {
 .textsend {
    color: rgb(60, 114, 147);
   font-size: 18pt;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
