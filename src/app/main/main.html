@@ -2,7 +2,7 @@
 
   <div layout="row" layout-align="space-around center">
 
-      <div class="videogular-container" id="bg">
+      <div class="videogular-container">
         <videogular vg-player-ready="main.onPlayerReady($API)" vg-complete="main.onCompleteVideo()" vg-theme="main.config.theme.url">
           <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
           </vg-media>
@@ -18,16 +18,12 @@
             <vg-tracks></vg-tracks>
           </vg-controls>
 
-          <!--      <vg-overlay-play></vg-overlay-play>-->
+                <vg-overlay-play></vg-overlay-play>
           <vg-buffering></vg-buffering>
-                <vg-poster vg-url='main.config.plugins.poster'></vg-poster>
+                <vg-poster vg-url="main.config.plugins.poster"></vg-poster>
         </videogular>
       </div>
-
-
-
   </div>
-
 
   <div ng-show="main.API.currentState != 'play'" class="navwaves" id="navID">
 
@@ -35,92 +31,16 @@
     <div class="navwavesbutton" layout-align="center center">
 
 
-      <div>
+          <div ng-repeat="video in main.videos">
         <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(0)">one</a>
-        </md-button>
-      </div>
 
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(1)">two</a>
+          <a ng-click="main.setVideo({{ $index }})">{{video.sources[0].name}}</a>
         </md-button>
       </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(2)">three</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(3)">four</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(4)">five</a>
-        </md-button>
-      </div>
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(5)">six</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(6)">seven</a>
-        </md-button>
-      </div>
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(7)">eight</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(8)">nine</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(9)">ten</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(10)">eleven</a>
-        </md-button>
-      </div>
-
-      <div>
-        <md-button class="md-buttonnav">
-          <a ng-click="main.setVideo(11)">look</a>
-        </md-button>
-      </div>
-
-
-      <div>
-        <md-button class="md-buttonnav">
-          <div class="navtext"><a ng-click="main.setVideo(12)">what is</a></div>
-        </md-button>
-      </div>
-
 
 
       <img src="assets/images/backgroundwaves.png" class="bgwaves">
     </div>
   </div>
-  <!--
-  <header>
-    <acme-navbar/>
-  </header>
--->
 
 </md-content>
