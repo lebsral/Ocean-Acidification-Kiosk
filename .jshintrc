@@ -9,6 +9,9 @@
   "unused": true,
   "validthis": true,
   "jasmine": true,
+  "predef": {
+            "Firebase": false
+        },
   "globals": {
     "angular": false,
     "inject": false,

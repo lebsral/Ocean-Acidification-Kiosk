@@ -4,6 +4,6 @@
 
   angular
     .module('acidification')
-    .constant('toastr', toastr)
+    .constant('toastr', toastr);
 
 })();
