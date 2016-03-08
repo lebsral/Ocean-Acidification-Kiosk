@@ -1,5 +1,9 @@
 <md-content>
-
+        <div ng-show="main.API.currentState != 'play'" ng-repeat="video in main.videos">
+        <md-button class="md-buttonnav" ng-click="main.setVideo({{ $index }})">
+          <div class="navtext"> {{video.sources[0].name}} </div>
+        </md-button>
+      </div>
   <div layout="row" layout-align="space-around center">
 
       <div class="videogular-container">
