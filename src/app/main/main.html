@@ -1,9 +1,86 @@
 <md-content>
-        <div ng-show="main.API.currentState != 'play'" ng-repeat="video in main.videos">
-        <md-button class="md-buttonnav" ng-click="main.setVideo({{ $index }})">
-          <div class="navtext"> {{video.sources[0].name}} </div>
+
+
+  <div ng-show="main.API.currentState != 'play'">
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(0)">
+          <div class="navtext"> {{main.videos[0].sources[0].name}} </div>
         </md-button>
       </div>
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(1)">
+          <div class="navtext"> {{main.videos[1].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(2)">
+          <div class="navtext"> {{main.videos[2].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(3)">
+          <div class="navtext"> {{main.videos[3].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(4)">
+          <div class="navtext"> {{main.videos[4].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(5)">
+          <div class="navtext"> {{main.videos[5].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(6)">
+          <div class="navtext"> {{main.videos[6].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(7)">
+          <div class="navtext"> {{main.videos[7].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(8)">
+          <div class="navtext"> {{main.videos[8].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(9)">
+          <div class="navtext"> {{main.videos[9].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+
+      <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(10)">
+          <div class="navtext"> {{main.videos[10].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+    </div>
+
+
+
   <div layout="row" layout-align="space-around center">
 
       <div class="videogular-container">
@@ -40,11 +117,30 @@
     <div class="navwavesbutton" layout-align="center center">
 
 
-          <div ng-repeat="video in main.videos">
-        <md-button class="md-buttonnav" ng-click="main.setVideo({{ $index }})">
-          <div class="navtext"> {{video.sources[0].name}} </div>
+
+            <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(11)">
+          <div class="navtext"> {{main.videos[11].sources[0].name}} </div>
         </md-button>
       </div>
+
+            <div class="navwavesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(12)">
+          <div class="navtext"> {{main.videos[12].sources[0].name}} </div>
+        </md-button>
+      </div>
+
+        <md-button class="md-buttonnav" ui-sref="OAFacts">
+    <div class="navtext">OA Facts</div>
+  </md-button>
+
+  <div class="container">
+    <div class="round-button">
+      <div class="round-button-circle" ui-sref="act-now" layout-align="center">
+        <div class="actText">Act Now</div>
+      </div>
+    </div>
+  </div>
 
 
       <img src="assets/images/backgroundwaves.png" class="bgwaves">
