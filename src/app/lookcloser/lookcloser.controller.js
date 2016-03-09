@@ -31,7 +31,6 @@
       }
 
       vm.setVideo(vm.currentVideo);
-
     };
 
     vm.videos = [
