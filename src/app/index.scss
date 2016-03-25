@@ -240,3 +240,13 @@ body {
 .ontopofvid {
   z-index: 9
 }
+
+.user-avatar {
+  border-radius: 99%;
+}
+
+.navvoicesbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

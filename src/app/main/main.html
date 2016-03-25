@@ -4,9 +4,21 @@
 
   <div ng-show="main.API.currentState != 'play'">
 
-      <div class="navwavesbutton" layout-align="center center">
+      <div class="navvoicesbutton" layout-align="center center">
         <md-button class="md-buttonnav" ng-click="main.setVideo(0)">
-          <div class="navtext"> {{main.videos[0].sources[0].name}} </div>
+            <div layout-align="left"><img src="./assets/images/Alexus.jpg"></div>
+            <div flex class="navtext">
+            <div layout-align="center center"> {{main.videos[0].sources[0].name}} </div>
+          </div>
+        </md-button>
+      </div>
+
+          <div class="navvoicesbutton" layout-align="center center">
+        <md-button class="md-buttonnav" ng-click="main.setVideo(1)">
+            <div layout-align="left"><img src="./assets/images/Alexus.jpg"></div>
+            <div flex class="navtext">
+            <div layout-align="center center"> {{main.videos[1].sources[0].name}} </div>
+          </div>
         </md-button>
       </div>
 
@@ -146,5 +158,5 @@
       <img src="assets/images/backgroundwaves.png" class="bgwaves">
     </div>
   </div>
-
+  </div>
 </md-content>
