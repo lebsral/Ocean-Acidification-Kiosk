@@ -1,9 +1,9 @@
 .md-buttonnav {
-  width: 385px;
-//  width: 0;
+//  width: 385px;
   height: 130px;
   z-index: 33;
-background-color: #001d4a;
+  flex: 0 1 auto;
+  background-color: #001d4a;
   text-align: center;
   padding: 5px;
   margin: 10px;
@@ -27,6 +27,7 @@ background-color: #001d4a;
 .navtext {
   color: white;
   font: 25px nexa_rust_sansblack;
+  margin: 10px;
 }
 
 
