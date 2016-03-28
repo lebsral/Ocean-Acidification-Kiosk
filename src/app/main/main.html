@@ -1,6 +1,8 @@
 <md-content>
 
+ng-show="showme"
 
+  <div ng-show="showvoices">
   <div ng-show="main.API.currentState != 'play'">
 
     <div class="buttonInColumns">
@@ -102,7 +104,7 @@
         </md-button>
       </div>
     </div>
-
+    </div>
     </div>
 
 
@@ -139,7 +141,7 @@
 
   <div ng-show="main.API.currentState != 'play'" class="navwaves fade_slide_transition" id="navID">
 
-
+<div ng-hide="showvoices">
     <div class="navwavesbutton" layout-align="center center">
 
 
@@ -161,7 +163,9 @@
     <div class="navtext">OA Facts</div>
   </md-button>
 </div>
-       <div><md-button class="md-buttonnav" ui-sref="voices">
+
+
+       <div><md-button ng-click="showvoices=true" class="md-buttonnav" ui-sref="voices">
     <div class="navtext">Voices</div>
   </md-button></div>
 
@@ -172,7 +176,7 @@
       </div>
     </div>
   </div>
-
+  </div>
       <img src="assets/images/backgroundwaves.png" class="bgwaves">
     </div>
   </div>
