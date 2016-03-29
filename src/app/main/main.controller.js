@@ -21,6 +21,8 @@
 
     vm.onCompleteVideo = function () {
       vm.isCompleted = true;
+      vm.showvoices = false;
+      window.location.reload(true);
     };
 
     vm.videos = [
