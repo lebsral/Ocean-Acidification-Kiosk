@@ -1,10 +1,13 @@
 <md-content>
 
+ng-show="showme"
 
+  <div ng-show="showvoices">
   <div ng-show="main.API.currentState != 'play'">
-<div class="buttonInColumns">
+
+    <div class="buttonInColumns">
       <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(0)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(0)">
             <div layout-align="left"><img src="./assets/images/Alexus.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[0].sources[0].name}} </div>
@@ -13,7 +16,7 @@
       </div>
 
           <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(1)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(1)">
             <div layout-align="left"><img src="./assets/images/AngelaDoroff.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[1].sources[0].name}} </div>
@@ -22,7 +25,7 @@
       </div>
 
                   <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(2)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(2)">
             <div layout-align="left"><img src="./assets/images/DrFoy.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[2].sources[0].name}} </div>
@@ -30,7 +33,7 @@
         </md-button>
       </div>
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(3)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(3)">
             <div layout-align="left"><img src="./assets/images/Kris.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[3].sources[0].name}} </div>
@@ -39,7 +42,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(4)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(4)">
             <div layout-align="left"><img src="./assets/images/Clem.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[4].sources[0].name}} </div>
@@ -48,7 +51,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(5)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(5)">
             <div layout-align="left"><img src="./assets/images/Dan.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[5].sources[0].name}} </div>
@@ -57,7 +60,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(6)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(6)">
             <div layout-align="left"><img src="./assets/images/Dune.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[6].sources[0].name}} </div>
@@ -66,7 +69,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(7)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(7)">
             <div layout-align="left"><img src="./assets/images/Frank.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[7].sources[0].name}} </div>
@@ -75,7 +78,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(8)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(8)">
             <div layout-align="left"><img src="./assets/images/Kim.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[8].sources[0].name}} </div>
@@ -84,7 +87,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(9)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(9)">
             <div layout-align="left"><img src="./assets/images/DrMathis.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[9].sources[0].name}} </div>
@@ -93,7 +96,7 @@
       </div>
 
               <div class="navvoicesbutton" layout-align="center center">
-        <md-button class="md-buttonnav" ng-click="main.setVideo(10)">
+        <md-button class="md-buttonnavtop" ng-click="main.setVideo(10)">
             <div layout-align="left"><img src="./assets/images/Shallin.jpg"></div>
             <div flex class="navtext">
             <div layout-align="center center"> {{main.videos[10].sources[0].name}} </div>
@@ -101,7 +104,7 @@
         </md-button>
       </div>
     </div>
-
+    </div>
     </div>
 
 
@@ -113,6 +116,7 @@
           <vg-media vg-src="main.config.sources" vg-tracks="main.config.tracks">
           </vg-media>
 
+<!--
           <vg-controls class="ontopofvid">
 
                 <vg-play-pause-button></vg-play-pause-button>
@@ -128,6 +132,7 @@
                 <vg-fullscreen-button></vg-fullscreen-button>
 
           </vg-controls>
+-->
 
                 <vg-overlay-play></vg-overlay-play>
           <vg-buffering></vg-buffering>
@@ -138,7 +143,7 @@
 
   <div ng-show="main.API.currentState != 'play'" class="navwaves fade_slide_transition" id="navID">
 
-
+<div ng-hide="showvoices">
     <div class="navwavesbutton" layout-align="center center">
 
 
@@ -155,9 +160,16 @@
         </md-button>
       </div>
 
+      <div class="navwavesbutton" layout-align="center center">
         <md-button class="md-buttonnav" ui-sref="OAFacts">
     <div class="navtext">OA Facts</div>
   </md-button>
+</div>
+
+
+       <div><md-button ng-click="showvoices=true" class="md-buttonnav" ui-sref="voices">
+    <div class="navtext">Voices</div>
+  </md-button></div>
 
   <div class="container">
     <div class="round-button">
@@ -166,9 +178,9 @@
       </div>
     </div>
   </div>
-
+  </div>
       <img src="assets/images/backgroundwaves.png" class="bgwaves">
     </div>
   </div>
-  </div>
+
 </md-content>

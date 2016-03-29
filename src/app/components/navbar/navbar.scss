@@ -1,9 +1,24 @@
-
-.md-buttonnav {
-  width: 385px;
+.md-buttonnavtop {
+  width: 440px;
   height: 130px;
   z-index: 33;
-background-color: #001d4a;
+  flex: 0 1 auto;
+  background-color: #001d4a;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #000000;
+}
+.md-buttonnav {
+//  width: 440px;
+  height: 130px;
+  z-index: 33;
+  flex: 0 1 auto;
+  background-color: #001d4a;
   text-align: center;
   padding: 5px;
   margin: 10px;
@@ -27,6 +42,7 @@ background-color: #001d4a;
 .navtext {
   color: white;
   font: 25px nexa_rust_sansblack;
+  margin: 10px;
 }
 
 
